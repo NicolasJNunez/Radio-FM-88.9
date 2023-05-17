@@ -305,13 +305,17 @@ h4 {
 }
 
 .videos {
+  position: relative;
   margin: 40px 0 100px 0;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: hsl(4, 82%, 67%);
+}
+.videos__cont-contenido {
+  margin-top: -50px;
 }
 .videos__cont-titulo {
   margin: 0 auto 100px;
@@ -326,7 +330,7 @@ h4 {
   background-clip: text;
   color: transparent;
   background-size: 400%;
-  animation: color 5s infinite alternate;
+  animation: color 2s infinite alternate;
 }
 .videos__cont-vid {
   display: flex;
@@ -348,6 +352,49 @@ h4 {
     background-position: right;
   }
 }
+.custom-shape-divider-top-1684286448 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1684286448 svg {
+  position: relative;
+  display: block;
+  width: calc(273% + 1.3px);
+  height: 73px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1684286448 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1684286415 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1684286415 svg {
+  position: relative;
+  display: block;
+  width: calc(273% + 1.3px);
+  height: 73px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684286415 .shape-fill {
+  fill: #FFFFFF;
+}
+
 .fotos__titulo {
   text-align: center;
   margin-bottom: 50px;
