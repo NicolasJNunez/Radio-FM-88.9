@@ -1,0 +1,81 @@
+.card {
+  width: 252px;
+  height: 265px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px #bebebe,
+            -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+  &:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+  &--2 {
+    @extend .card;
+    height: 590px;
+  }
+  &--3 {
+    @extend .card;
+    height: 420px;
+  }
+  &--4 {
+    @extend .card;
+    height: 510px;
+  }
+  &--5 {
+    @extend .card;
+    height: 570px;
+  }
+  &--6 {
+    @extend .card;
+    height: 700px;
+  }
+  &--7 {
+    @extend .card;
+    height: 480px;
+  }
+}
+
+.img {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  &--2 {
+    @extend .img;
+    height: 450px;
+  }
+}
+
+.text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text .h3 {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 0.938rem;
+  font-weight: 600;
+  color: black;
+}
+
+.text .p {
+  font-family: 'Lucida Sans' sans-serif;
+  color: #999999;
+  font-size: 0.813rem;
+}
+
+.icon-box {
+  margin-top: 15px;
+  width: fit-content;
+  padding: 10px;
+  background-color: #e3fff9;
+  border-radius: 10px;
+}
+
+.icon-box .span {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #9198e5;
+}

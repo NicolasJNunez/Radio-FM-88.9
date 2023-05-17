@@ -1,0 +1,62 @@
+.footer {
+  background-color: $color-primario-1;
+  width: 100vw;
+  height: auto;
+  padding-top: 2.5rem;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    & span {
+      color: $color-primario-4;
+    }
+    & h3 {
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+    & p {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 1.75rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    & li {
+      margin: 0 10px;
+    }
+    & a {
+      text-decoration: none;
+      color: #000;
+    }
+    & a i {
+      font-size: 1.5rem;
+      transition: color .4s ease;
+    }
+    & a:hover i {
+      color: $color-primario-4;
+    }
+  }
+
+  &__bottom {
+    width: 100vw;
+    padding: 1.25rem 0;
+    text-align: center;
+    & p {
+      font-size: 0.875rem;
+      word-spacing: 0.125rem;
+    }
+    & span {
+      opacity: .6;
+    }
+  }
+}

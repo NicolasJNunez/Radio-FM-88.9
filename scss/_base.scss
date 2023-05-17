@@ -1,0 +1,62 @@
+$color-primario-1: hsl(4, 82%, 67%);
+$color-primario-2: hsl(29, 97%, 86%);
+$color-primario-3: hsl(58, 89%, 93%);
+$color-primario-4: hsl(183, 100%, 36%);
+$color-primario-5: hsl(194, 100%, 33%);
+$cinco-claro: hsl(194, 100%, 63%);
+
+
+@mixin a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@mixin maxw600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: .8rem 2.5rem;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  &:hover {
+    color: $cinco-claro;
+    transition: .4s;
+  }
+}
+
+h2 {
+  color: #000;
+  margin: 20px 0px 20px;
+  font-size: 4rem;
+}
+
+h3 {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: $color-primario-5;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}

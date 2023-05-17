@@ -1,0 +1,205 @@
+
+// ------------------Seccion Portada------------------
+
+.hero {
+  height: 110vh;
+  width: 100%;
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-size: cover;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.8rem;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  &__logo {
+    color: #000;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+  }
+
+  &__span {
+    color: $color-primario-4;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+  }
+
+  &__cont-click-aqui {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+
+    & a {
+      @include a;
+    }
+  }
+}
+
+// ------------------Seccion About us------------------
+
+.about {
+  width: 100%;
+  padding: 6.25rem 0;
+
+  &__img {
+    border: 2px solid black;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 1px #000);
+  }
+
+  &__text {
+    width: 550px;
+  }
+
+  &__main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__text h2 {
+    font-size: 4.68rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  &__text h5 {
+    letter-spacing: 2px;
+    font-size: 1.375rem;
+    margin-bottom: 25px;
+  }
+  &__text p {
+    letter-spacing: 1px;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    margin-bottom: 45px;
+  }
+  & a {
+    @include a;
+  }
+}
+
+// ------------------Sección Videos------------------
+
+.videos {
+  margin: 40px 0 100px 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-primario-1;
+  &__cont-titulo {
+    margin: 0 auto 100px;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 80px;
+    padding: 1rem 1rem 0.4rem;
+  }
+  &__titulo {
+    margin: 0;
+    background-image: linear-gradient(45deg,hsl(194, 100%, 13%),hsl(194, 100%, 17%),hsl(194, 100%, 22%),hsl(194, 100%, 27%),hsl(194, 100%, 32%),hsl(194, 100%, 37%),hsl(194, 100%, 42%),hsl(194, 100%, 47%),hsl(194, 100%, 52%));
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: color 5s infinite alternate;
+  }
+  &__cont-vid {
+    display: flex;
+    & > * {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    & figure iframe {
+      box-shadow: 1px 1px 20px 0 #000;
+    }
+  }
+}
+
+@keyframes color {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+// ------------------Sección Fotos------------------
+
+.fotos {
+  &__titulo {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__grid {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    & img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+}
+
+// ------------------Sección Publicidad------------------
+
+.publicidad {
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  &__titulo {
+    text-align: center;
+  }
+  &__cont-tarj {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+    }
+  }
+}
+
+.custom-shape-divider-bottom-1684252060 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1684252060 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-bottom-1684252060 .shape-fill {
+  fill: #F06F66;
+}
