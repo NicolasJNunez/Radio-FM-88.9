@@ -12,37 +12,38 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Document</title>
 </head>
 
 <body>
-  <!-- Sección Portada -->
+  <!-- Header -->
   <header id="inicio" class="hero">
     <nav class="hero__nav">
-      <h1 class="hero__logo">88.9 <span class="hero__span">FM</span></h1>
+      <h1 class="hero__logo">Adri <span class="hero__span">G</span>arcía</h1>
       <ul>
         <li><a href="./index.html">Inicio</a></li>
-        <li><a href="#about-us">Sobre Nosotros</a></li>
+        <li><a href="#about-us">Sobre Mí</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#audioteca">Audioteca</a></li>
         <li><a href="#publicidad">Publicidad</a></li>
       </ul>
-      <a href="#" class="btn">¡Escuchanos!</a>
+      <a href="#" class="btn">Escuchame en <i class="fa fa-facebook"></i></a>
     </nav>
-    <div class="hero__content">
-      <h4>Esuchanos a toda hora</h4>
-      <h2>¡Vamos por <span class="hero__span">más!</span></h2>
-      <h3>La radio que te acompaña en todo momento</h3>
-      <div class="hero__cont-click-aqui">
-        <h3>Click aquí para escucharnos</h3>
-        <button class="btn"><a href="#">88.9 FM</a></button>
-      </div>
-    </div>
   </header>
 
-  <!-- Sección Quienes somos -->
   <main>
+    <!-- Sección Portada -->
+    <section class="portada">
+      <div class="portada__cont-titulo"></div>
+      <span>Te invito a recorrer mi historia</span>
+      <a href="#about-us" class="portada__arrow-container">
+        <div class="portada__arrow"></div>
+      </a>
+    </section>
+    <!-- Sección Quienes somos -->
     <section id="about-us" class="about">
       <div class="about__main">
         <div class="about__person">
@@ -52,16 +53,10 @@
           </div>
         </div>
         <div class="about__text">
-          <h2>Sobre nosotros</h2>
-          <h5>La Radio del <span class="hero__span">Pueblo</span></h5>
-          <p>En nuestra emisora, nos apasiona compartir un poco de todo con nuestros oyentes. Desde
-            <strong>noticias</strong> actuales hasta <strong>entretenimiento</strong>, nos aseguramos de brindarles una
-            experiencia llena de energía y entusiasmo.
-
-            Nos enorgullece crear un ambiente cálido y acogedor, donde cada persona se sienta parte de nuestra
-            <strong>familia</strong> radiofónica. Nuestro objetivo principal es preocuparnos por el
-            <strong>bienestar</strong> de nuestra comunidad y el pueblo en general.</p>
-          <button class="btn"><a href="#">88.9 FM</a></button>
+          <h2>Sobre Mí</h2>
+          <h5>Llamame <span class="hero__span">Chispita</span></h5>
+          <p>Esta página es un pedacito de mi <strong>esencia</strong> que quiero compartir con <strong>vos</strong>. Aquí vas a encontrar un recorrido visual por mi trayectoria, donde las fotografías y los videos capturan algunos de mis momentos <strong>especiales</strong> y <strong>emotivos</strong>. Es un lugar donde vas a poder adentrarte en mi mundo, conocerme un poco más y descubrir las <strong>pasiones</strong> que me <strong>impulsan</strong> en cada paso que doy frente al micrófono y la vida.</p>
+          <button class="btn"><a href="#">Escuchame en <i class="fa fa-facebook"></i></a></button>
         </div>
       </div>
     </section>
@@ -112,6 +107,16 @@
     <!-- Seccion fotos -->
     <section id="fotos" class="fotos">
       <h2 class="fotos__titulo">Fotos</h2>
+      <div class="fotos__grid">
+        <img src="./img/1.jpg">
+        <img src="./img/2.jpg">
+        <img src="./img/3.jpg">
+        <img src="./img/4.jpg">
+        <img src="./img/5.jpg">
+        <img src="./img/6.jpg">
+        <img src="./img/7.jpg">
+        <img src="./img/8.jpg">
+      </div>
       <div class="fotos__wrapper">
         <div class="fotos__box-area">
           <div class="fotos__box1">
@@ -128,33 +133,55 @@
           </div>
         </div>
       </div>
-      <div class="fotos__grid">
-        <img src="./img/1.jpg">
-        <img src="./img/2.jpg">
-        <img src="./img/3.jpg">
-        <img src="./img/4.jpg">
-        <img src="./img/5.jpg">
-        <img src="./img/6.jpg">
-        <img src="./img/7.jpg">
-        <img src="./img/8.jpg">
-        <img src="./img/9.jpg">
-        <img src="./img/10.jpg">
-        <img src="./img/11.jpg">
-        <img src="./img/12.jpg">
-        <img src="./img/13.jpg">
-        <img src="./img/14.jpg">
-        <img src="./img/15.jpg">
-        <img src="./img/16.jpg">
-        <img src="./img/17.jpg">
-        <img src="./img/18.jpg">
-        <img src="./img/19.jpg">
-        <img src="./img/20.jpg">
-        <img src="./img/21.jpg">
-        <img src="./img/22.jpg">
-        <img src="./img/23.jpg">
-        <img src="./img/24.jpg">
-      </div>
     </section>
+
+    <!-- Sección Audioteca -->
+    <section id="audioteca" class="audioteca">
+      <div class="custom-shape-divider-top-1684521817">
+        <div class="custom-shape-divider-top-1684522749">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+    </div>
+      <h2 class="audioteca__titulo">Audioteca</h2>
+      <div class="audioteca__cont-players">
+        <div class="audioteca__player">
+          <div class="audioteca__imgbox">
+            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+          </div>
+          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+        </div>
+        <div class="audioteca__player">
+          <div class="audioteca__imgbox">
+            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+          </div>
+          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+        </div>
+        <div class="audioteca__player">
+          <div class="audioteca__imgbox">
+            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+          </div>
+          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+        </div>
+        <div class="audioteca__player">
+          <div class="audioteca__imgbox">
+            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+          </div>
+          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1684523877">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </section>
+
     <!-- Seccion Publicidades -->
     <section id="publicidad" class="publicidad">
       <h2 class="publicidad__titulo">Publicidad</h2>
@@ -275,8 +302,8 @@
   </main>
   <footer class="footer">
     <div class="footer__content">
-      <h3>Radio 88.9 <span>FM</span></h3>
-      <p>La radio que siempre te acompaña ¡Vamos por más!</p>
+      <h3>Adri <span>G</span>arcía</h3>
+      <p>Gracias por llegar hasta aquí ¡Pasate por mis redes sociales!</p>
       <ul class="footer__socials">
         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -286,10 +313,15 @@
       </ul>
     </div>
     <div class="footer__bottom">
-      <p>Creado por <span>Nicolás Javier Núñez &copy;</span> 2023 Radio 88.9 FM</p>
+      <p>Creado por <span>Nicolás Javier Núñez &copy;</span> 2023</p>
     </div>
   </footer>
-  <a href="https://api.whatsapp.com/send?phone=(pone-el-numero-aca-sin-los-parentesis)" class="btn-wsp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=5491161561118" class="btn-wsp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

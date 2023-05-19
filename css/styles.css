@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -162,7 +163,7 @@ h4 {
 
 .footer {
   background-color: hsl(4, 82%, 67%);
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding-top: 2.5rem;
 }
@@ -209,7 +210,7 @@ h4 {
   color: hsl(183, 100%, 36%);
 }
 .footer__bottom {
-  width: 100vw;
+  width: 100%;
   padding: 1.25rem 0;
   text-align: center;
 }
@@ -222,11 +223,8 @@ h4 {
 }
 
 .hero {
-  height: 110vh;
+  height: 0;
   width: 100%;
-  background-image: url("../img/background.png");
-  background-position: center;
-  background-size: cover;
 }
 .hero__nav {
   display: flex;
@@ -235,33 +233,134 @@ h4 {
   padding-top: 2.8rem;
   padding-left: 8%;
   padding-right: 8%;
+  font-size: 1.2rem;
 }
 .hero__logo {
   color: #000;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
 }
 .hero__span {
   color: hsl(183, 100%, 36%);
 }
-.hero__content {
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
-}
-.hero__cont-click-aqui {
+
+.portada {
+  height: 110vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 40px;
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-size: cover;
 }
-.hero__cont-click-aqui a {
-  text-decoration: none;
+.portada__cont-titulo {
+  margin-top: -50px;
+  width: 21ch;
+  border-right: 0.1em solid black;
+  font-family: monospace;
+  font-size: 4.5em;
+  animation: type 2.5s steps(20), writer 1s infinite alternate, delete 0.5s steps(5) 2.5s, type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.portada__cont-titulo::before {
+  content: "¡Hola! soy Adriana G";
+  animation: type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+}
+.portada span {
+  background-color: hsl(183, 100%, 36%);
+  padding: 1.5rem;
+  border-radius: 50px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  margin-top: 75px;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+.portada__arrow-container {
+  margin-top: 50px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(70%) rotate(45deg);
+}
+.portada__arrow {
+  width: 30px;
+  height: 30px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  animation: arrow-animation 2s infinite alternate;
+  animation-delay: 11s;
+  opacity: 0;
 }
 
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+@keyframes type2 {
+  from {
+    width: 16ch;
+    content: "¡Hola! soy Adriana. ";
+  }
+  to {
+    width: 20ch;
+    content: "¡Hola! soy Adriana. ";
+  }
+}
+@keyframes type3 {
+  from {
+    width: 20ch;
+    content: "¡Hola! soy Adriana. Bienvenido a mi página";
+  }
+  to {
+    width: 42ch;
+    content: "¡Hola! soy Adriana. Bienvenido a mi página";
+  }
+}
+@keyframes writer {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes delete {
+  from {
+    width: 21ch;
+  }
+  to {
+    width: 16ch;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0) translateX(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(25px) translateX(-2%);
+    opacity: 0.5;
+  }
+}
 .about {
   width: 100%;
   padding: 6.25rem 0;
@@ -338,7 +437,7 @@ h4 {
 
 .videos {
   position: relative;
-  margin: 40px 0 100px 0;
+  margin: 40px 0 20px 0;
   width: 100%;
   height: 90vh;
   display: flex;
@@ -360,6 +459,7 @@ h4 {
   margin: 0;
   background-image: linear-gradient(45deg, hsl(194, 100%, 13%), hsl(194, 100%, 17%), hsl(194, 100%, 22%), hsl(194, 100%, 27%), hsl(194, 100%, 32%), hsl(194, 100%, 37%), hsl(194, 100%, 42%), hsl(194, 100%, 47%), hsl(194, 100%, 52%));
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   background-size: 400%;
   animation: color 2s infinite alternate;
@@ -427,6 +527,9 @@ h4 {
   fill: #FFFFFF;
 }
 
+.fotos {
+  padding-top: 3rem;
+}
 .fotos__titulo {
   text-align: center;
   margin-bottom: 50px;
@@ -445,9 +548,8 @@ h4 {
 .fotos__wrapper {
   width: 300px;
   height: 300px;
-  margin: 120px auto;
+  margin: 200px auto 50px;
   perspective: 800px;
-  margin-bottom: 200px;
 }
 .fotos__box-area {
   width: 300px;
@@ -488,16 +590,98 @@ h4 {
     transform: rotateY(360deg);
   }
 }
+.audioteca {
+  position: relative;
+  background-color: hsl(29, 97%, 86%);
+  margin: 125px 0 100px 0;
+  padding: 150px 0 750px;
+  height: 90vh;
+}
+.audioteca__titulo {
+  text-align: center;
+}
+.audioteca__cont-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 4rem;
+}
+.audioteca__player {
+  min-width: 350px;
+  max-width: 500px;
+  background: #f1f3f4;
+  flex: 1;
+}
+.audioteca__player .audioteca__imgbox {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.audioteca__player .audioteca__imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.audioteca__player audio {
+  width: 100%;
+  outline: none;
+}
+
+.custom-shape-divider-top-1684522749 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1684522749 svg {
+  position: relative;
+  display: block;
+  width: calc(199% + 1.3px);
+  height: 84px;
+}
+
+.custom-shape-divider-top-1684522749 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1684523877 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1684523877 svg {
+  position: relative;
+  display: block;
+  width: calc(187% + 1.3px);
+  height: 63px;
+}
+
+.custom-shape-divider-bottom-1684523877 .shape-fill {
+  fill: #FFFFFF;
+}
+
 .publicidad {
   position: relative;
-  margin-top: 100px;
+  padding-top: 50px;
+  margin-top: 50px;
   padding-bottom: 100px;
 }
 .publicidad__titulo {
   text-align: center;
 }
 .publicidad__cont-tarj {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 5%;
