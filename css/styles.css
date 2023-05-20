@@ -509,7 +509,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: hsl(4, 82%, 67%);
+  background: linear-gradient(45deg, hsl(4, 82%, 17%), hsl(4, 82%, 67%));
 }
 .videos__cont-contenido {
   margin-top: -70px;
@@ -782,19 +782,29 @@ h4 {
 }
 .audioteca {
   position: relative;
-  background-color: hsl(29, 97%, 86%);
+  background: linear-gradient(45deg, hsl(29, 47%, 46%), hsl(29, 97%, 86%));
   margin: 125px 0 100px 0;
   padding: 150px 0 750px;
-  height: 110vh;
+  height: 150vh;
 }
 .audioteca__texto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
-.audioteca__titulo {
-  text-align: center;
+.audioteca__texto .videos__cont-titulo {
+  margin: 0 0 80px;
+}
+.audioteca__texto article {
+  width: 40%;
+}
+.audioteca__texto article h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.audioteca__texto article p {
+  font-size: 1.5rem;
 }
 .audioteca__cont-players {
   display: flex;

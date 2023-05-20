@@ -307,7 +307,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $color-primario-1;
+  background: linear-gradient(45deg,hsl(4, 82%, 17%), $color-primario-1);
   &__cont-contenido {
     margin-top: -70px;
   }
@@ -596,18 +596,28 @@
 
 .audioteca {
   position: relative;
-  background-color: $color-primario-2;
+  background: linear-gradient(45deg,hsl(29, 47%, 46%), $color-primario-2);
   margin: 125px 0 100px 0;
   padding: 150px 0 750px;
-  height: 110vh;
+  height: 150vh;
   &__texto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-  }
-  &__titulo {
-    text-align: center;
+    margin-bottom: 200px;
+    .videos__cont-titulo {
+      margin: 0 0 80px;
+    }
+    article {
+      width: 40%;
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
   }
   &__cont-players {
     display: flex;
