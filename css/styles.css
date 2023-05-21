@@ -620,6 +620,7 @@ h4 {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
+  margin-bottom: 350px;
 }
 .fotos__wrapper {
   width: 300px;
@@ -782,10 +783,23 @@ h4 {
 }
 .audioteca {
   position: relative;
-  background: linear-gradient(45deg, hsl(29, 47%, 46%), hsl(29, 97%, 86%));
+  background-image: url("../img/16.jpg");
+  background-position: center;
+  background-size: cover;
   margin: 125px 0 100px 0;
   padding: 150px 0 750px;
   height: 150vh;
+}
+.audioteca__cont-img-texto {
+  display: flex;
+  justify-content: center;
+}
+.audioteca__cont-img-texto img {
+  width: 300px;
+  height: 300px;
+  float: left;
+  shape-outside: ellipse(50% 50%);
+  margin-right: 1rem;
 }
 .audioteca__texto {
   display: flex;
@@ -802,6 +816,7 @@ h4 {
 .audioteca__texto article h3 {
   font-size: 2rem;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5333333333);
 }
 .audioteca__texto article p {
   font-size: 1.5rem;

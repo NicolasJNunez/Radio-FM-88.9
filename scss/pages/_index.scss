@@ -423,6 +423,7 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
+    margin-bottom: 350px;
   }
   &__wrapper {
     width: 300px;
@@ -596,10 +597,23 @@
 
 .audioteca {
   position: relative;
-  background: linear-gradient(45deg,hsl(29, 47%, 46%), $color-primario-2);
+  background-image: url("../img/16.jpg");
+  background-position: center;
+  background-size: cover;
   margin: 125px 0 100px 0;
   padding: 150px 0 750px;
   height: 150vh;
+  &__cont-img-texto {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 300px;
+      height: 300px;
+      float: left;
+      shape-outside: ellipse(50% 50%);
+      margin-right: 1rem;
+    }
+  }
   &__texto {
     display: flex;
     flex-direction: column;
@@ -613,6 +627,7 @@
       h3 {
         font-size: 2rem;
         margin-bottom: 15px;
+        text-shadow: 1px 1px 5px #00000088;
       }
       p {
         font-size: 1.5rem;
