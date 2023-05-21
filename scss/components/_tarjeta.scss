@@ -1,11 +1,15 @@
 .card {
   width: 252px;
-  height: 265px;
+  height: 245px;
   background: white;
   border-radius: 30px;
   box-shadow: 15px 15px 30px #bebebe,
             -15px -15px 30px #ffffff;
   transition: 0.2s ease-in-out;
+  order: 2;
+  img {
+    object-fit: cover;
+  }
   &:hover {
   cursor: pointer;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
@@ -13,26 +17,42 @@
   &--2 {
     @extend .card;
     height: 590px;
+    order: 7;
   }
   &--3 {
     @extend .card;
-    height: 420px;
+    height: 412px;
+    order: 4;
   }
   &--4 {
     @extend .card;
-    height: 510px;
+    height: 490px;
+    order: 5;
   }
   &--5 {
     @extend .card;
     height: 570px;
+    order: 8
   }
   &--6 {
     @extend .card;
     height: 700px;
+    order: 9;
   }
   &--7 {
     @extend .card;
-    height: 480px;
+    height: 382px;
+    order: 3;
+  }
+  &--8 {
+    @extend .card;
+    height: 580px;
+    order: 6;
+  }
+  &--9 {
+    @extend .card;
+    height: 240px;
+    order: 1;
   }
 }
 

@@ -698,8 +698,8 @@
   position: relative;
   padding-top: 7rem;
   padding-bottom: 100px;
-  &__titulo {
-    text-align: center;
+  & .videos__cont-titulo {
+    margin-bottom: 0;
   }
   &__cont-tarj {
     width: 100%;
