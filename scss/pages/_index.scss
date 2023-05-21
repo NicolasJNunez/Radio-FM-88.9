@@ -32,6 +32,7 @@
 // ------------------Sección portada------------------
 
 .portada {
+  position: relative;
   height: 110vh;
   display: flex;
   flex-direction: column;
@@ -40,23 +41,36 @@
   background-image: url("../img/background.png");
   background-position: center;
   background-size: cover;
-  &__cont-titulo {
-    margin-top: -250px;
-    width: 21ch;
-    border-right: 0.1em solid black;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 4.5em;
-    animation: type 2.5s steps(20), writer 1s infinite alternate, delete 0.5s steps(5) 2.5s, type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    &::before {
-      content: "¡Hola! soy Adriana G";
-      animation: type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+  overflow: hidden;
+  &__cont-type {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    span {
+      font-size: 7vw;
     }
   }
-  & span {
+  &__multitext {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $color-primario-4;
+  }
+  &__frase {
+    margin: 120px 0 50px;
+    font-size: 1.75vw;
+    transform: translateX(-290px);
+    font-weight: 300;
+    color: #4d4d4de5;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #00000080;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 5px;
+    span {
+      font-family: 'Indie Flower', cursive;
+      font-weight: bold;
+    }
+  }
+  &__te-invito {
     background-color: $color-primario-4;
     padding: 1.5rem;
     border-radius: 50px;
@@ -66,15 +80,16 @@
     opacity: 0;
     animation-name: appear;
     animation-duration: 3s;
-    animation-delay: 10s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
+    transform: translateX(-250px) translateY(-50px);
   }
   &__arrow-container {
     margin-top: 50px;
     bottom: 20px;
     left: 50%;
-    transform: translateX(70%) rotate(45deg);
+    transform: translateX(-790%) translateY(-50px) rotate(45deg);
   }
   &__arrow {
     width: 30px;
@@ -83,65 +98,23 @@
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     animation: arrow-animation 2s infinite alternate;
-    animation-delay: 11.5s;
+    animation-delay: 1.5s;
     opacity: 0;
   }
   &__img {
-    width: 300px;
-    height: 300px;
+    width: 455px;
+    height: 455px;
     position: absolute;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
     bottom: 40px;
-    right: 200px;
+    right: 150px;
     opacity: 0;
-    animation: img-circle 2s forwards ease;
-    animation-delay: 12.5s;
+    background-image: url("../img/adri-muneco.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: img-circle 2s forwards ease, movimiento-circulo 8s ease-in-out infinite;
+    animation-delay: 2s;
     filter: drop-shadow(1px 1px 5px rgb(0, 0, 0, 0.5)) ;
-  }
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-  to {
-    width: 21ch;
-  }
-}
-
-@keyframes type2 {
-  from {
-    width: 16ch;
-    content: "¡Hola! soy Adriana. "
-  }
-  to {
-    width: 20ch;
-    content: "¡Hola! soy Adriana. "
-  }
-}
-
-@keyframes type3 {
-  from {
-    width: 20ch;
-    content: "¡Hola! soy Adriana. Bienvenido a mi página"
-  }
-  to {
-    width: 42ch;
-    content: "¡Hola! soy Adriana. Bienvenido a mi página"
-  }
-}
-
-@keyframes writer {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes delete {
-  from {
-    width: 21ch;
-  }
-  to {
-    width: 16ch;
   }
 }
 
@@ -174,11 +147,23 @@
     opacity: 0;
   }
   75% {
-    transform: translateY(0);
+    transform: translateY(-195px);
   }
   100% {
     opacity: 1;
-    transform: translateY(-50px);
+    transform: translateY(-240px);
+  }
+}
+
+@keyframes movimiento-circulo {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60% ;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
   }
 }
 
@@ -263,7 +248,7 @@
   }
   &__socials {
     position: absolute;
-    top: 30%;
+    top: 37.5%;
     width: 125px;
     height: 225px;
     box-shadow: 2px 2px 8px 0 rgba(0,0,0,.4);
@@ -307,7 +292,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(45deg,hsl(4, 82%, 17%), $color-primario-1);
+  background: linear-gradient(45deg,hsl(183, 100%, 13%), $color-primario-4);
   &__cont-contenido {
     margin-top: -70px;
   }
@@ -600,15 +585,15 @@
   background-image: url("../img/16.jpg");
   background-position: center;
   background-size: cover;
-  margin: 125px 0 100px 0;
-  padding: 150px 0 750px;
-  height: 150vh;
+  margin: 125px 0 0 ;
+  padding: 150px 0 200px;
+  min-height: 150vh;
   &__cont-img-texto {
     display: flex;
     justify-content: center;
     img {
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
       float: left;
       shape-outside: ellipse(50% 50%);
       margin-right: 1rem;
@@ -618,14 +603,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     .videos__cont-titulo {
       margin: 0 0 80px;
     }
     article {
-      width: 40%;
+      width: 50%;
       h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 15px;
         text-shadow: 1px 1px 5px #00000088;
       }
