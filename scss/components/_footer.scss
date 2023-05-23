@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-primario-1;
+  background-color: $color-primario-4;
   width: 100%;
   height: auto;
   padding-top: 2.5rem;
@@ -10,7 +10,7 @@
     flex-direction: column;
     text-align: center;
     & span {
-      color: $color-primario-4;
+      color: #fff;
     }
     & h3 {
       font-size: 1.6rem;
@@ -43,7 +43,7 @@
       transition: color .4s ease;
     }
     & a:hover i {
-      color: $color-primario-4;
+      color: #fff;
     }
   }
 
