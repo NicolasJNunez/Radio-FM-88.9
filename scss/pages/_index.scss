@@ -1,10 +1,10 @@
 
-// ------------------Seccion Portada------------------
+// ------------------Header------------------
 .hero {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 
   &__nav {
     display: flex;
@@ -22,10 +22,13 @@
     color: #000;
     font-size: 2.5rem;
     letter-spacing: 1px;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 900;
   }
 
   &__span {
     color: $color-primario-4;
+    font-family: 'Sorts Mill Goudy', serif;
   }
 }
 
@@ -45,9 +48,9 @@
   &__cont-type {
     position: absolute;
     left: 5%;
-    top: 20%;
+    top: 17%;
     span {
-      font-size: 6.25vw;
+      font-size: 5.8vw;
     }
   }
   &__multitext {
@@ -55,10 +58,37 @@
     text-transform: capitalize;
     color: $color-primario-4;
   }
-  &__frase {
-    margin: 120px 0 50px;
-    font-size: 1.75vw;
+  &__cont-frase-quote {
+    position: relative;
+    margin: 50px 0 50px;
     transform: translateX(-290px);
+    display: flex;
+    flex-direction: column;
+    border-left: 2.8px solid;
+    padding-left: 12px;
+    border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.479) 5%, transparent);
+    border-image-slice: 1;
+    .portada__quote {
+      margin: 80px 25px 0 0;
+      align-self: end;
+      color: #00000077;
+      font-size: 1.5rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #0000002a;
+    }
+    .portada__comillas {
+      font-family: 'Montagu Slab', serif;
+      font-size: 8rem;
+      color: #6d6d6db0;
+      position: absolute;
+      right: 0;
+      top: 35px;
+      transform: translateX(50px);
+    }
+  }
+  &__frase {
+    font-size: 1.75vw;
     font-weight: 300;
     color: #4d4d4de5;
     font-style: italic;
@@ -76,7 +106,7 @@
     border-radius: 50px;
     color: #fff;
     font-size: 3rem;
-    margin-top: 75px;
+    margin-top: 55px;
     opacity: 0;
     animation-name: appear;
     animation-duration: 3s;
@@ -173,12 +203,21 @@
   background-image: url("../img/img-flor.png");
   background-repeat: no-repeat;
   background-size: 1000px;
-  background-position: 920px -20px;
+  background-position: 920px 10px;
   width: 100%;
   padding: 13.25rem 0;
   position: relative;
   &__main {
     transform: translateX(-170px);
+    span {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    p {
+      padding-left: 20px;
+      border-left: 2px solid;
+      border-image: linear-gradient(to bottom, transparent 3% , rgba(0, 0, 0, 0.479) 3%, transparent);
+      border-image-slice: 1;
+    }
   }
 &__person {
   max-width: 15rem;
@@ -324,7 +363,6 @@
       height: 40px;
       border-bottom: 3px solid #0000004d;
       border-right: 3px solid #0000004d;
-      border-radius: 8px;
       transform: rotate(45deg);
       margin: -10px;
       animation: animatte-arrow 2s infinite;
@@ -345,15 +383,16 @@
   position: relative;
   margin: 40px 0 20px 0;
   width: 100%;
-  height: 115vh;
+  min-height: 128vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: -20;
   background: linear-gradient(45deg,hsl(183, 100%, 13%), $color-primario-4);
   &__cont-contenido {
     margin-top: -70px;
-    z-index: -10;
+    iframe {
+      z-index: 50;
+    }
   }
   &__cont-titulo {
     margin: 0 auto 100px;
@@ -375,13 +414,23 @@
   &__sticker-adri {
     position: absolute;
     width: 175px;
-    z-index: -5;
+    z-index: 10;
     top: 150px;
     left: 175px;
   }
   &__cont-vid {
     display: flex;
     justify-content: space-evenly;
+    h3 {
+      font-size: 1.8rem;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #000000;
+      -webkit-text-fill-color: #ffffff;
+      letter-spacing: 2px;
+      span {
+        -webkit-text-fill-color: $color-primario-4;
+      }
+    }
     & > * {
       display: flex;
       flex-direction: column;
@@ -398,6 +447,12 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+    & .contraste {
+      background-color: $color-primario-2;
+    }
+    button {
+      margin-bottom: 30px;
     }
   }
 }
@@ -468,7 +523,7 @@
   }
   &__dicho {
     position: absolute;
-    width: 350px;
+    width: 360px;
     top: 300px;
     left: 165px;
     font-size: 1.2rem;
@@ -479,6 +534,10 @@
     text-shadow: 1px 1px 1px #00000080;
     font-family: 'Indie Flower', cursive;
     letter-spacing: 5px;
+    border-left: 2.3px solid;
+    padding-left: 15px;
+    border-image: linear-gradient(to bottom, transparent 6% , rgba(0, 0, 0, 0.479) 6%, transparent);
+    border-image-slice: 1;
     span {
       font-family: 'Indie Flower', cursive;
       font-weight: bold;
@@ -497,6 +556,9 @@
     text-shadow: 1px 1px 1px #00000080;
     font-family: 'Indie Flower', cursive;
     letter-spacing: 5px;
+    border-right: 2.3px solid;
+    border-image: linear-gradient(to bottom, transparent 6% , rgba(0, 0, 0, 0.479) 6%, transparent);
+    border-image-slice: 1;
     span {
       font-family: 'Indie Flower', cursive;
       font-weight: bold;
@@ -528,7 +590,7 @@
     animation: movimiento-circulo 8s ease-in-out infinite;
   }
   &__fondo-cubo {
-    background-image: url("../img/5.jpg");
+    background-image: url("../img/fondo-cubo.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -633,24 +695,30 @@
     }
   }
   &__item-1 { 
-    background-image: url('https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80');
+    background-image: url('../img/adri-galard.jpg');
+    &:hover {
+      flex:2;
+  }
   }
   
   &__item-2 { 
-    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
+    background-image: url("../img/adri-felap.jpg");
   }
   
   &__item-3 { 
-    background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80');
+    background-image: url("../img/voz-adri.jpg");
   }
   
   &__item-4 { 
-    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
+    background-image: url("../img/adri-mujer.jpg");
   }
   
   &__item-5 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+    background-image: url("../img/adri-diploma.jpg");
+    &:hover {
+      flex:5;
   }
+}
   &__cont-subtitulo {
     display: flex;
     flex-direction: column;
@@ -672,7 +740,7 @@
     }
   }
   &__fondo-slider {
-    background-image: url("../img/8.jpg");
+    background-image: url("../img/fondo-carr.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -760,7 +828,7 @@
 
 .audioteca {
   position: relative;
-  background-image: url("../img/16.jpg");
+  background-image: url("../img/fondo-audio.jpg");
   background-position: center;
   background-size: cover;
   margin: 750px 0 0 ;
@@ -790,11 +858,20 @@
       h3 {
         font-size: 2.5rem;
         margin-bottom: 15px;
-        text-shadow: 1px 1px 5px #00000044;
       }
       p {
         font-size: 1.5rem;
         color: #5c5c5c;
+        border-right:2.7px solid;
+        padding-right: 25px;
+        border-image: linear-gradient(to bottom, transparent 3% , rgba(0, 0, 0, 0.479) 3%, transparent);
+        border-image-slice: 1;
+        &::first-letter {
+          font-size: 3rem;
+          font-weight: bold;
+          color: #4080e0;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
       }
     }
   }
@@ -802,7 +879,7 @@
     z-index: 10;
     width: 200px;
     position: absolute;
-    top: 696px;
+    top: 722px;
     right: 180px;
   }
   &__cont-players {

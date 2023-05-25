@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montagu+Slab:wght@500&family=Noto+Sans+JP:wght@400;700&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Document</title>
@@ -28,7 +29,7 @@
         <li><a href="#audioteca">Audioteca</a></li>
         <li><a href="#publicidad">Publicidad</a></li>
       </ul>
-      <a href="#" class="btn">Escuchame en <i class="fa fa-facebook"></i></a>
+      <a href="https://www.facebook.com/2103664716449476/videos/797244574863691" target="_blank" class="btn">Escuchame en <i class="fa fa-facebook"></i></a>
     </nav>
   </header>
 
@@ -38,8 +39,12 @@
       <div class="portada__cont-type">
         <span>Yo soy <span class="portada__multitext"></span></span>
       </div>
-      <span class="portada__frase">"De la conducta de <span>uno</span> depende el futuro de <span>todos</span>"</span>
-      <span class="portada__te-invito">Te invito a recorrer mi historia</span>
+      <blockquote class="portada__cont-frase-quote">
+        <span class="portada__frase">De la conducta de <span>uno</span> depende el futuro de <span>todos</span></span>
+        <span class="portada__quote">⎯                              Alejandro Magno</span>
+        <span class="portada__comillas">"</span>
+      </blockquote>
+      <span class="portada__te-invito">Te invito a recorrer mi blog</span>
       <a href="#about-us" class="portada__arrow-container">
         <div class="portada__arrow"></div>
       </a>
@@ -57,7 +62,7 @@
         </div>
         <div class="about__text">
           <h2>Sobre Mí</h2>
-          <h5>Llamame <span class="hero__span">Chispita</span></h5>
+          <h5><span class="about__vineta">❖</span>Me dicen <span class="hero__span">Chispita</span></h5>
           <p>Esta página es un pedacito de mi <strong>esencia</strong> que quiero compartir con <strong>vos</strong>.
             Aquí vas a encontrar un recorrido visual por mi trayectoria, donde las fotografías y los videos capturan
             algunos de mis momentos <strong>especiales</strong> y <strong>emotivos</strong>. Es un lugar donde vas a
@@ -65,16 +70,16 @@
             <strong>impulsan</strong> en cada paso que doy frente al micrófono y la vida.
           </p>
           <div class="about__cont-btn-texto">
-            <button class="btn"><a href="#">Escuchame en <i class="fa fa-facebook"></i></a></button>
-            <span>Todos los <strong>martes</strong> a las <strong>19:00hs</strong> y los <strong>jueves</strong> a las <strong>15:00hs</strong> por radio pilar 88.0 FM</span>
+            <button class="btn"><a href="https://www.facebook.com/2103664716449476/videos/797244574863691" target="_blank">Escuchame en <i class="fa fa-facebook"></i></a></button>
+            <span>Todos los <strong>jueves</strong> desde las 12:00hs hasta las 14:00hs por Radio Más Pilar <strong>FM 88.9</strong></span>
           </div>
         </div>
       </div>
       <div class="about__socials">
         <ul>
-          <li class="about__socials-facebook"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-          <li class="about__socials-youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-          <li class="about__socials-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li class="about__socials-facebook"><a href="https://www.facebook.com/adriana.zech" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+          <li class="about__socials-youtube"><a href="https://www.youtube.com/@AdrianaGarcia-tk2wj" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+          <li class="about__socials-instagram"><a href="https://www.instagram.com/adrianagarciafm/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>
       <div class="about__body-flechas">
@@ -111,32 +116,26 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
             <figcaption>
-              <h3>Lorem ipsum dolor sit amet.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit vel rem provident est
-                possimus nemo? Quae ipsam ducimus, soluta architecto iure dolores nobis perspiciatis. Vitae ea
-                officiis aliquid reiciendis.</p>
+              <h3>La <span>Señora</span> del <span>Anillo</span> 💍</h3>
+              <p>Escuchá la increíble historia del posible anillo de <strong>San Martín</strong> que encontramos en La Posta Pinazo. <span class="contraste">Mario Markic</span> nos revela los detalles de este hallazgo histórico, desde las iniciales grabadas en el anillo hasta su conexión con el famoso combate de <strong>San Lorenzo</strong>. Enganchate en esta emocionante narrativa llena de <i>misterio</i> y <i>valor histórico</i>.</p>
             </figcaption>
+            <button class="btn">Ir al video</button>
           </figure>
           <figure class="videos__cont-text-vid">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8TiASYyWcBg"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SUu_1weBTag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>
-              <h3>Lorem ipsum dolor sit amet.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit vel rem provident est
-                possimus nemo? Quae ipsam ducimus, soluta architecto iure dolores nobis perspiciatis. Vitae ea
-                officiis aliquid reiciendis.</p>
+              <h3><span>Radio</span> Más Pilar <span>FM 88.9</span> 📻</h3>
+              <p>Sintonizá la <i>mejor radio</i> de Pilar. En este programa apasionante que conduzco, los oyentes participan a través de <strong>llamadas telefónicas</strong> y nos comparten sus <strong>opiniones</strong>. <i>Auspiciantes</i> reconocidos, transmisión en vivo y la promoción del <span class="contraste">involucramiento vecinal</span>. Descubrí el <strong>valor cultural</strong> en nuestra sociedad.</p>
             </figcaption>
+            <button class="btn">Ir al video</button>
           </figure>
           <figure class="videos__cont-text-vid">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/o5tR7NENeyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0vxY73w4Fec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>
-              <h3>Lorem ipsum dolor sit amet.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit vel rem provident est
-                possimus nemo? Quae ipsam ducimus, soluta architecto iure dolores nobis perspiciatis. Vitae ea
-                officiis aliquid reiciendis.</p>
+              <h3>Celebración en <span>Del Viso</span> 🎉</h3>
+              <p>Del Viso cumplió <strong>111 años</strong> y el festejó se llevo a cabo en un restaurante del pueblo. A pesar de las complicaciones que nos trajo la <i>pandemia</i>, hubo música, homenajes y gran <strong>contribución colectiva</strong>. Destacaron miembros locales y se habló de <strong>proyectos futuros</strong> para unir aún más a la <span class="contraste">comunidad</span>. ¡Descubrí todo en nuestro video!</p>
             </figcaption>
+            <button class="btn">Ir al video</button>
           </figure>
         </div>
       </div>
@@ -167,17 +166,17 @@
         <div class="fotos__wrapper">
           <div class="fotos__box-area">
             <div class="fotos__box1">
-              <img src="./img/adri-con-achaval.jpeg"
-                alt="Adriana Garcia sosteniendo un cuadro de San Martin junto a Achaval">
+              <img src="./img/adri-con-facu.jpeg"
+                alt="Adriana Garcia junto a Facundo Zech">
             </div>
             <div class="fotos__box2">
-              <img src="./img/adri-con-gonzalito.jpeg" alt="Adriana Garcia junto a Gonzalo Rodriguez brindando">
+              <img src="./img/adri-con-gonzalito.jpeg" alt="Adriana Garcia junto a la persona que considera su padre">
             </div>
             <div class="fotos__box3">
-              <img src="./img/adri-con-cristina.jpeg" alt="Adriana Garcia junto a Nestor Kirchner rodeada de gente">
+              <img src="./img/adri-con-cristina.jpg" alt="Adriana Garcia ante una multitud de gente">
             </div>
             <div class="fotos__box4">
-              <img src="./img/adri-con-nestor.jpeg" alt="Adriana Garcia junto a Christina Kirchner">
+              <img src="./img/adri-con-nestor.jpg" alt="Adriana Garcia teniendo un escudo y una espada">
             </div>
           </div>
         </div>
@@ -187,11 +186,11 @@
       </div>
       <article class="fotos__container">      
         <div class="fotos__gallery-wrap">
-          <div class="fotos__item fotos__item-1"><h3>Dia</h3><p>Este dua Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quibusdam! Commodi dolor ipsam nesciunt necessitatibus asperiores saepe quisquam, modi non placeat quidem repudiandae laudantium repellendus, aliquid nam a beatae.</p></div>
-          <div class="fotos__item fotos__item-2"><h3>Dia</h3><p>Este dua Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quibusdam! Commodi dolor ipsam nesciunt necessitatibus asperiores saepe quisquam, modi non placeat quidem repudiandae laudantium repellendus, aliquid nam a beatae.</p></div>
-          <div class="fotos__item fotos__item-3"><h3>Dia</h3><p>Este dua Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quibusdam! Commodi dolor ipsam nesciunt necessitatibus asperiores saepe quisquam, modi non placeat quidem repudiandae laudantium repellendus, aliquid nam a beatae.</p></div>
-          <div class="fotos__item fotos__item-4"><h3>Dia</h3><p>Este dua Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quibusdam! Commodi dolor ipsam nesciunt necessitatibus asperiores saepe quisquam, modi non placeat quidem repudiandae laudantium repellendus, aliquid nam a beatae.</p></div>
-          <div class="fotos__item fotos__item-5"><h3>Dia</h3><p>Este dua Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quibusdam! Commodi dolor ipsam nesciunt necessitatibus asperiores saepe quisquam, modi non placeat quidem repudiandae laudantium repellendus, aliquid nam a beatae.</p></div>
+          <div class="fotos__item fotos__item-1"><h3>Dia</h3><p>galardonada con la medalla al mérito por la unidad nacional de granaderos a caballos de la nacion argentina, por el descubrimiento.</p></div>
+          <div class="fotos__item fotos__item-2"><h3>Dia</h3><p>periodista-felap-nivelinternacional.</p></div>
+          <div class="fotos__item fotos__item-3"><h3>Dia</h3><p>voz nacional comunicando la apertura de la linea telefonica 144 de violenvia de genero.</p></div>
+          <div class="fotos__item fotos__item-4"><h3>Dia</h3><p>Mujer destacada de la provincia de buenos aires 2014</p></div>
+          <div class="fotos__item fotos__item-5"><h3>Dia</h3><p>Medios por la inclusión en la discapacidad.</p></div>
         </div>
       </article>
       <div class="fotos__cont-subtitulo">
@@ -201,14 +200,14 @@
       <div class="fotos__fondo-slider">
         <div class="fotos__body-slider">
           <div class="fotos__slider">
-            <span style="--i:1;"><img src="./img/1.jpg" alt=""></span>
-            <span style="--i:2;"><img src="./img/2.jpg" alt=""></span>
-            <span style="--i:3;"><img src="./img/3.jpg" alt=""></span>
-            <span style="--i:4;"><img src="./img/4.jpg" alt=""></span>
-            <span style="--i:5;"><img src="./img/5.jpg" alt=""></span>
-            <span style="--i:6;"><img src="./img/6.jpg" alt=""></span>
-            <span style="--i:7;"><img src="./img/7.jpg" alt=""></span>
-            <span style="--i:8;"><img src="./img/7.jpg" alt=""></span>
+            <span style="--i:1;"><a href="./img/adri-con-achaval.jpeg" data-lightbox="adri" data-title="Adri con Achaval"><img src="./img/adri-con-achaval.jpeg" alt="Adriana con el Intendente de Pilar Federico Achaval sosteniendo un cuadro de San Martín"></a></span>
+            <span style="--i:2;"><a href="./img/adri-con-gonzalito-2.jpeg" data-lightbox="adri" data-title="Adri Con Gonzalito"><img src="./img/adri-con-gonzalito-2.jpeg" alt="Adriana con Gonzalito de CQC"></a></span>
+            <span style="--i:3;"><a href="./img/foto-baro.jpg" data-lightbox="adri" data-title="Foto con Barovero"><img src="./img/foto-baro.jpg" alt="Adriana con el ex-arquero de River Barovero"></a></span>
+            <span style="--i:4;"><a href="./img/diario-el-apogeo.png" data-lightbox="adri" data-title="Diario El Apogeo"><img src="./img/diario-el-apogeo.png" alt="Adriana aparece en diario El Apogeo"></a></span>
+            <span style="--i:5;"><a href="./img/abajo-termo.jpeg" data-lightbox="adri" data-title="Adriana protestando por las termoeléctricas"><img src="./img/abajo-termo.jpeg" alt="Adriana con dos personas protestando por las termoelécrticas"></a></span>
+            <span style="--i:6;"><a href="./img/comisarios.jpg" data-lightbox="adri" data-title="Adriana con amigos suyos comisarios"><img src="./img/comisarios.jpg" alt="Adriana junto a comisarios"></a></span>
+            <span style="--i:7;"><a href="./img/san-martin.jpg" data-lightbox="adri" data-title="Adriana hablando de San Martín"><img src="./img/san-martin.jpg" alt="Adriana junto a un grupo de personas hablando de San Martín"></a></span>
+            <span style="--i:8;"><a href="./img/marco.jpg" data-lightbox="adri" data-title="Adriana con Marco Markik"><img src="./img/marco.jpg" alt="Adriana junto a Marco Markik y un grupo de personas en La Posta Pinazo"></a></span>
           </div>
         </div>
       </div>
@@ -238,8 +237,8 @@
         <div class="audioteca__cont-img-texto">
           <article class="audioteca__article">
             <img class="audioteca__article-img" src="./img/libro-mano.png" alt="Una persona teniendo un libro">
-            <h3 class="audioteca__article-h3">Te presento mi sección de cuentos</h3>
-            <p class="audioteca__article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque earum dignissimos id aut aspernatur, minus nisi eligendi sequi consequuntur porro quisquam hic reprehenderit tempora soluta exercitationem pariatur. Magnam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta id iste deserunt sequi sunt inventore? Inventore perspiciatis quisquam incidunt ex similique a animi quam voluptates distinctio totam. Minus, tempore.</p>
+            <h3 class="audioteca__article-h3">Te presento mi sección de cuentos y enseñanzas</h3>
+            <p class="audioteca__article-p">Lorem ipsum dolor sit amet consectetur adipisicing <strong>elit</strong>. Nam cumque earum dignissimos id aut aspernatur, minus nisi eligendi sequi consequuntur porro <i style="letter-spacing: 3px; font-size: 1.6rem;">"quisquam hic reprehenderit"</i> tempora soluta exercatur. <strong>Magnam</strong>, quae. Lorem ipsum dolor a soluta id iste deserunt <strong>sequi</strong> sunt inventore? Inventore perspiciatis quisquam incidunt ex similique a <strong>animi</strong> quam voluptates distinctio totam. Minus, tempore.</p>
           </article>
         </div>
       </div>
@@ -247,27 +246,27 @@
       <div class="audioteca__cont-players">
         <div class="audioteca__player">
           <div class="audioteca__imgbox">
-            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+            <img src="./img/cuentos1.png" alt="Dos personas gritandose">
           </div>
           <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
         </div>
         <div class="audioteca__player">
           <div class="audioteca__imgbox">
-            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+            <img src="./img/burro.png" alt="Un burro">
           </div>
-          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+          <audio src="./audio/c1.mp3" type="audio/mp3" controls></audio>
         </div>
         <div class="audioteca__player">
           <div class="audioteca__imgbox">
-            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+            <img src="./img/cabana.png" alt="Un libro con anteojos encima">
           </div>
-          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+          <audio src="./audio/c5.mp3" type="audio/mp3" controls></audio>
         </div>
         <div class="audioteca__player">
           <div class="audioteca__imgbox">
-            <img src="./img/cuentos.jpg" alt="Un libro con anteojos encima">
+            <img src="./img/cain.png" alt="Un nene que mira mal a su hermano menor">
           </div>
-          <audio src="./audio/c2.mp3" type="audio/mp3" controls></audio>
+          <audio src="./audio/c3.mp3" type="audio/mp3" controls></audio>
         </div>
       </div>
       <div class="custom-shape-divider-bottom-1684523877">
@@ -292,7 +291,7 @@
       </div>
       <img class="publicidad__fondo-chispas" src="./img/back-publ.png" alt="Fondo de chispas">
       <div class="publicidad__cont-tarj">
-        <div class="card">
+        <a class="card" href="./img/ad-1.jpg" data-lightbox="publi" data-title="Los Jazmines">
           <img src="./img/ad-1.jpg" class="img" alt="Empresa Los Jazmines de eventos">
           <div class="text">
             <p class="h3"> Los Jazmines </p>
@@ -302,9 +301,9 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--2">
+        <a class="card--2" href="./img/ad-2.jpg" data-lightbox="publi" data-title="Taller de Alineación Matias Carbajal">
           <img src="./img/ad-2.jpg" class="img--2" alt="Taller de alineacion Matias Carabajal">
 
           <div class="text">
@@ -316,9 +315,9 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--3">
+        <a class="card--3" href="./img/ad-3.jpg" data-lightbox="publi" data-title="Municipalidad José C. Paz">
           <img src="./img/ad-3.jpg" class="img" alt="Municipalidad Mario ishi">
 
           <div class="text">
@@ -330,9 +329,9 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--4">
+        <a class="card--4" href="./img/ad-4.jpg" data-lightbox="publi" data-title="Frigorífico Villa del Carmen">
           <img src="./img/ad-4.jpg" class="img" alt="Frigorífico Villa del Carmen">
 
           <div class="text">
@@ -344,10 +343,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--5">
-          <img src="./img/ad-5.jpg" class="img" alt="Taller de mecánica, chapa y pintura de Lucas Carabajal">
+        <a class="card--5" href="./img/ad-5.jpg" data-lightbox="publi" data-title="Taller Mecánico Lucas Carbajal">
+          <img src="./img/ad-5.jpg" class="img" alt="Taller de mecánica, chapa y pintura de Lucas Carbajal">
 
           <div class="text">
             <p class="h3"> Lucas Carabajal </p>
@@ -358,9 +357,9 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--6">
+        <a class="card--6" href="./img/ad-6.jpg" data-lightbox="publi" data-title="Podas y Talas Mario Daniel Lorenzo">
           <img src="./img/ad-6.jpg" class="img" alt="Podas y talas Mario Daniel Lorenzo">
 
           <div class="text">
@@ -372,9 +371,9 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--7">
+        <a class="card--7" href="./img/ad-7.jpg" data-lightbox="publi" data-title="Club Municipal Del Viso deportes">
           <img src="./img/ad-7.jpg" class="img" alt="Club municipal Del Viso deportes">
 
           <div class="text">
@@ -386,10 +385,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--8">
-          <img src="./img/ad-8.jpg" class="img" alt="Pizzeria ¡Que Locura!">
+        <a class="card--8" href="./img/ad-8.jpg" data-lightbox="publi" data-title="Pizzeria ¡Qué Locura!">
+          <img src="./img/ad-8.jpg" class="img" alt="Pizzeria ¡Qué Locura!">
 
           <div class="text">
             <p class="h3"> Pizza ¡Que Locura! </p>
@@ -400,10 +399,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card--9">
-          <img src="./img/ad-9.jpg" class="img" alt="Pizzeria ¡Que Locura!">
+        <a class="card--9" href="./img/ad-9.jpg" data-lightbox="publi" data-title="Multiplex Palmas Del Pilar">
+          <img src="./img/ad-9.jpg" class="img" alt="Multiplex Palmas Del Pilar">
 
           <div class="text">
             <p class="h3"> Multiplex Palmas Del Pilar </p>
@@ -414,7 +413,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
       </div>
 
@@ -438,11 +437,11 @@
       <h3>Adriana <span>G</span>arcía</h3>
       <p>Gracias por llegar hasta aquí ¡Pasate por mis redes sociales!</p>
       <ul class="footer__socials">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-google"></i></a></li>
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="https://www.facebook.com/adriana.zech" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/Adrianagarciaok" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/adrianagarciafm/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/@AdrianaGarcia-tk2wj" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5491161561118" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
       </ul>
     </div>
     <div class="footer__bottom">
@@ -456,10 +455,11 @@
   <script>
     AOS.init();
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     var typingEffect = new Typed (".portada__multitext", {
-      strings : ["locutora","periodista","comunicadora","coordinadora"],
+      strings : ["locutora","periodista","comunic. social","org. de eventos"],
       loop : true,
       typeSpeed: 100,
       backSpeed: 80, 

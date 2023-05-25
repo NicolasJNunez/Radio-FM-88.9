@@ -95,6 +95,7 @@ h4 {
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   transition: 0.2s ease-in-out;
   order: 2;
+  text-decoration: none;
 }
 .card img, .card--9 img, .card--8 img, .card--7 img, .card--6 img, .card--5 img, .card--4 img, .card--3 img, .card--2 img {
   object-fit: cover;
@@ -194,8 +195,10 @@ h4 {
 }
 .footer__content span {
   color: #fff;
+  font-family: "Sorts Mill Goudy", serif;
 }
 .footer__content h3 {
+  font-family: "Sorts Mill Goudy", serif;
   font-size: 1.6rem;
   text-transform: capitalize;
   line-height: 3rem;
@@ -244,7 +247,7 @@ h4 {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 .hero__nav {
   display: flex;
@@ -261,9 +264,12 @@ h4 {
   color: #000;
   font-size: 2.5rem;
   letter-spacing: 1px;
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 900;
 }
 .hero__span {
   color: hsl(183, 100%, 36%);
+  font-family: "Sorts Mill Goudy", serif;
 }
 
 .portada {
@@ -281,20 +287,47 @@ h4 {
 .portada__cont-type {
   position: absolute;
   left: 5%;
-  top: 20%;
+  top: 17%;
 }
 .portada__cont-type span {
-  font-size: 6.25vw;
+  font-size: 5.8vw;
 }
 .portada__multitext {
   font-weight: bold;
   text-transform: capitalize;
   color: hsl(183, 100%, 36%);
 }
-.portada__frase {
-  margin: 120px 0 50px;
-  font-size: 1.75vw;
+.portada__cont-frase-quote {
+  position: relative;
+  margin: 50px 0 50px;
   transform: translateX(-290px);
+  display: flex;
+  flex-direction: column;
+  border-left: 2.8px solid;
+  padding-left: 12px;
+  border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.479) 5%, transparent);
+  border-image-slice: 1;
+}
+.portada__cont-frase-quote .portada__quote {
+  margin: 80px 25px 0 0;
+  align-self: end;
+  color: rgba(0, 0, 0, 0.4666666667);
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1647058824);
+}
+.portada__cont-frase-quote .portada__comillas {
+  font-family: "Montagu Slab", serif;
+  font-size: 8rem;
+  color: rgba(109, 109, 109, 0.6901960784);
+  position: absolute;
+  right: 0;
+  top: 35px;
+  transform: translateX(50px);
+}
+.portada__frase {
+  font-size: 1.75vw;
   font-weight: 300;
   color: rgba(77, 77, 77, 0.8980392157);
   font-style: italic;
@@ -312,7 +345,7 @@ h4 {
   border-radius: 50px;
   color: #fff;
   font-size: 3rem;
-  margin-top: 75px;
+  margin-top: 55px;
   opacity: 0;
   animation-name: appear;
   animation-duration: 3s;
@@ -402,13 +435,22 @@ h4 {
   background-image: url("../img/img-flor.png");
   background-repeat: no-repeat;
   background-size: 1000px;
-  background-position: 920px -20px;
+  background-position: 920px 10px;
   width: 100%;
   padding: 13.25rem 0;
   position: relative;
 }
 .about__main {
   transform: translateX(-170px);
+}
+.about__main span {
+  font-family: "Josefin Sans", sans-serif;
+}
+.about__main p {
+  padding-left: 20px;
+  border-left: 2px solid;
+  border-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.479) 3%, transparent);
+  border-image-slice: 1;
 }
 .about__person {
   max-width: 15rem;
@@ -549,7 +591,6 @@ h4 {
   height: 40px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.3019607843);
   border-right: 3px solid rgba(0, 0, 0, 0.3019607843);
-  border-radius: 8px;
   transform: rotate(45deg);
   margin: -10px;
   animation: animatte-arrow 2s infinite;
@@ -566,16 +607,17 @@ h4 {
   position: relative;
   margin: 40px 0 20px 0;
   width: 100%;
-  height: 115vh;
+  min-height: 128vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: -20;
   background: linear-gradient(45deg, hsl(183, 100%, 13%), hsl(183, 100%, 36%));
 }
 .videos__cont-contenido {
   margin-top: -70px;
-  z-index: -10;
+}
+.videos__cont-contenido iframe {
+  z-index: 50;
 }
 .videos__cont-titulo {
   margin: 0 auto 100px;
@@ -597,13 +639,23 @@ h4 {
 .videos__sticker-adri {
   position: absolute;
   width: 175px;
-  z-index: -5;
+  z-index: 10;
   top: 150px;
   left: 175px;
 }
 .videos__cont-vid {
   display: flex;
   justify-content: space-evenly;
+}
+.videos__cont-vid h3 {
+  font-size: 1.8rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: #ffffff;
+  letter-spacing: 2px;
+}
+.videos__cont-vid h3 span {
+  -webkit-text-fill-color: hsl(183, 100%, 36%);
 }
 .videos__cont-vid > * {
   display: flex;
@@ -621,6 +673,12 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.videos__cont-vid .contraste {
+  background-color: hsl(29, 97%, 86%);
+}
+.videos__cont-vid button {
+  margin-bottom: 30px;
 }
 
 @keyframes color {
@@ -686,7 +744,7 @@ h4 {
 }
 .fotos__dicho {
   position: absolute;
-  width: 350px;
+  width: 360px;
   top: 300px;
   left: 165px;
   font-size: 1.2rem;
@@ -697,6 +755,10 @@ h4 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
   font-family: "Indie Flower", cursive;
   letter-spacing: 5px;
+  border-left: 2.3px solid;
+  padding-left: 15px;
+  border-image: linear-gradient(to bottom, transparent 6%, rgba(0, 0, 0, 0.479) 6%, transparent);
+  border-image-slice: 1;
 }
 .fotos__dicho span {
   font-family: "Indie Flower", cursive;
@@ -715,6 +777,9 @@ h4 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
   font-family: "Indie Flower", cursive;
   letter-spacing: 5px;
+  border-right: 2.3px solid;
+  border-image: linear-gradient(to bottom, transparent 6%, rgba(0, 0, 0, 0.479) 6%, transparent);
+  border-image-slice: 1;
 }
 .fotos__dicho-2 span {
   font-family: "Indie Flower", cursive;
@@ -746,7 +811,7 @@ h4 {
   animation: movimiento-circulo 8s ease-in-out infinite;
 }
 .fotos__fondo-cubo {
-  background-image: url("../img/5.jpg");
+  background-image: url("../img/fondo-cubo.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -849,19 +914,25 @@ h4 {
   transition: opacity 0.2s ease;
 }
 .fotos__item-1 {
-  background-image: url("https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80");
+  background-image: url("../img/adri-galard.jpg");
+}
+.fotos__item-1:hover {
+  flex: 2;
 }
 .fotos__item-2 {
-  background-image: url("https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80");
+  background-image: url("../img/adri-felap.jpg");
 }
 .fotos__item-3 {
-  background-image: url("https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80");
+  background-image: url("../img/voz-adri.jpg");
 }
 .fotos__item-4 {
-  background-image: url("https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80");
+  background-image: url("../img/adri-mujer.jpg");
 }
 .fotos__item-5 {
-  background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80");
+  background-image: url("../img/adri-diploma.jpg");
+}
+.fotos__item-5:hover {
+  flex: 5;
 }
 .fotos__cont-subtitulo {
   display: flex;
@@ -884,7 +955,7 @@ h4 {
   transform: translateY(15px);
 }
 .fotos__fondo-slider {
-  background-image: url("../img/8.jpg");
+  background-image: url("../img/fondo-carr.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -966,7 +1037,7 @@ h4 {
 }
 .audioteca {
   position: relative;
-  background-image: url("../img/16.jpg");
+  background-image: url("../img/fondo-audio.jpg");
   background-position: center;
   background-size: cover;
   margin: 750px 0 0;
@@ -999,17 +1070,26 @@ h4 {
 .audioteca__texto article h3 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2666666667);
 }
 .audioteca__texto article p {
   font-size: 1.5rem;
   color: #5c5c5c;
+  border-right: 2.7px solid;
+  padding-right: 25px;
+  border-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.479) 3%, transparent);
+  border-image-slice: 1;
+}
+.audioteca__texto article p::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4080e0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .audioteca__sticker {
   z-index: 10;
   width: 200px;
   position: absolute;
-  top: 696px;
+  top: 722px;
   right: 180px;
 }
 .audioteca__cont-players {
