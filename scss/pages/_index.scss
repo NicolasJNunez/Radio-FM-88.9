@@ -36,7 +36,7 @@
 
 .portada {
   position: relative;
-  height: 110vh;
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +49,10 @@
     position: absolute;
     left: 5%;
     top: 17%;
+    h2 {
+      font-size: 5.8vw;
+      font-weight: 400;
+    }
     span {
       font-size: 5.8vw;
     }
@@ -101,11 +105,10 @@
     }
   }
   &__te-invito {
-    background-color: $color-primario-4;
+    background-color: #fff;
     padding: 1.5rem;
-    border-radius: 50px;
-    color: #fff;
     font-size: 3rem;
+    font-weight: bold;
     margin-top: 55px;
     opacity: 0;
     animation-name: appear;
@@ -114,6 +117,16 @@
     animation-fill-mode: forwards;
     box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
     transform: translateX(-250px) translateY(-50px);
+    text-decoration: none;
+    border-radius: 40px;
+    .inside-text {
+      background-image: linear-gradient(45deg,hsl(194, 100%, 13%),hsl(194, 100%, 17%),hsl(194, 100%, 22%),hsl(194, 100%, 27%),hsl(194, 100%, 32%),hsl(194, 100%, 37%),hsl(194, 100%, 42%),hsl(194, 100%, 47%),hsl(194, 100%, 52%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: 400%;
+      animation: color 2s infinite alternate;
+    }
   }
   &__arrow-container {
     margin-top: 50px;
@@ -217,6 +230,7 @@
       border-left: 2px solid;
       border-image: linear-gradient(to bottom, transparent 3% , rgba(0, 0, 0, 0.479) 3%, transparent);
       border-image-slice: 1;
+      line-height: 1.5;
     }
   }
 &__person {
@@ -307,7 +321,7 @@
         font-style: normal;
       }
     }
-    button {
+    a {
       min-width: 238px;
     }
   }
@@ -415,7 +429,7 @@
     position: absolute;
     width: 175px;
     z-index: 10;
-    top: 150px;
+    top: 130px;
     left: 175px;
   }
   &__cont-vid {
@@ -441,17 +455,31 @@
       overflow: hidden;
       box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
     }
+    figure {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     & figcaption {
       width: 500px;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       gap: 20px;
+      text-align: justify;
+      h3 {
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+      }
     }
     & .contraste {
       background-color: $color-primario-2;
     }
-    button {
+    a {
       margin-bottom: 30px;
     }
   }
@@ -517,7 +545,7 @@
   padding-top: 7rem;
   width: 100%;
   margin-bottom: 100px;
-  height: 255vh;
+  min-height: 310vh;
   & .videos__cont-titulo {
     margin-bottom: 30px;
   }
@@ -639,7 +667,7 @@
     transform-origin: right;
   }
   &__cont-h3-expandible {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     transform: translateX(250px);
     width: fit-content;
     padding-right: .5rem;
@@ -656,6 +684,8 @@
     display: flex;
     width: 100%;
     height: 70vh;
+    gap: 30px;
+    padding: 0 50px;
   }
   &__item {
     flex: 1;
@@ -668,29 +698,52 @@
     flex-direction: column;
     justify-content: end;
     padding: 0 0 10px 10px;
+    border-top-right-radius: 50px;
+    box-shadow: #e6e6e6 5px 5px 2px 0px,
+				#c7c7c7 6px 6px 2px 0px,
+				#ababab 7px 7px 2px 0px,
+				#9e9e9e 8px 8px 2px 0px,
+				#919191 9px 9px 2px 0px;
     p {
-      max-width: 250px;
+      text-shadow: 0 0 2px #000000ab;
+      color: #3b3b3b;
+      font-size: 1.3rem;
+      max-width: 300px;
       opacity: 0;
       transition: opacity 2s ease;
-    }
-    h3 {
-      transform: translateY(125px);
-      transition: 0.5s ease;
-      margin-bottom: 3px;
+      margin: 0 0 20px 20px;
+      background-color: #ffffffb9;
+      padding: 5px;
+      box-shadow: 0 0 5px 15px #ffffffb9;
+      line-height: 1.35;
+      border-radius: 5px;
+      .subr2 {
+        text-decoration: underline;
+      }
+      .backgr {
+        background-color: #577897a2;
+        padding: 2px;
+        color: white;
+        padding: 4px;
+        border-radius: 10px;
+      }
+      .colo {
+        color: #383d6e;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
     }
     &:hover{
       flex: 3.4;
       p {
         opacity: 1;
       }
-      h3 {
-        transform: translateY(0);
-      }
     }
     &:not(:hover) {
       p {
         opacity: 0;
-        transition: opacity 0.2s ease;
+        transition: opacity .5s ease;
       }
     }
   }
@@ -744,11 +797,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    --mask: 
-    conic-gradient(from 132.5deg at top,#0000,#000 1deg 94deg,#0000 95deg) top/32.74px 51% repeat-x,
-    conic-gradient(from -47.5deg at bottom,#0000,#000 1deg 94deg,#0000 95deg) bottom/32.74px 51% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
   }
   &__body-slider {
     display: flex;
@@ -831,7 +879,7 @@
   background-image: url("../img/fondo-audio.jpg");
   background-position: center;
   background-size: cover;
-  margin: 750px 0 0 ;
+  margin: 200px 0 0 ;
   padding: 150px 0 200px;
   min-height: 150vh;
   &__cont-img-texto {
@@ -854,7 +902,25 @@
       margin: 0 0 80px;
     }
     article {
+      h3 {
+        text-shadow: 1px 1px 3px #000;
+        font-weight: 500;
+      }
       width: 50%;
+      .bold {
+        font-weight: 700;
+      }
+      .contraste2 {
+        color: #42320ece;
+        background-color: #c5a15350;
+        font-family: 'Indie Flower', cursive;
+        letter-spacing: 2px;
+        padding: 3.3px;
+        font-weight: bold;
+      }
+      .subr {
+        text-decoration: underline;
+      }
       h3 {
         font-size: 2.5rem;
         margin-bottom: 15px;
@@ -866,11 +932,11 @@
         padding-right: 25px;
         border-image: linear-gradient(to bottom, transparent 3% , rgba(0, 0, 0, 0.479) 3%, transparent);
         border-image-slice: 1;
+        line-height: 1.35;
         &::first-letter {
-          font-size: 3rem;
-          font-weight: bold;
-          color: #4080e0;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 2rem;
+          font-weight: 100;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
       }
     }
@@ -879,8 +945,8 @@
     z-index: 10;
     width: 200px;
     position: absolute;
-    top: 722px;
-    right: 180px;
+    top: 695px;
+    right: 130px;
   }
   &__cont-players {
     display: flex;
