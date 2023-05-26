@@ -15,7 +15,46 @@
     font-size: 1.2rem;
     background-color: white;
     width: 100%;
-    height: 100px;
+    height: 150px;
+    @include w1726 () {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @include w1638 () {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    @include w1350 () {
+      font-size: 1rem;
+    }
+    .btn {
+      @include w1638 () {
+        font-size: 1rem;
+      }
+      @include w1200 () {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        max-width: 180px;
+        margin-left: auto;
+      }
+    }
+    @include w1200 () {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 75px 75px;
+    }
+    @include w800 () {
+      display: none;
+    }
+  }
+
+  &__ul {
+    @include w1200 () {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__logo {
@@ -24,6 +63,12 @@
     letter-spacing: 1px;
     font-family: 'Sorts Mill Goudy', serif;
     font-weight: 900;
+    @include w1638 () {
+      font-size: 2.2rem;
+    }
+    @include w1260 () {
+      font-size: 1.7rem;
+    }
   }
 
   &__span {
@@ -32,11 +77,119 @@
   }
 }
 
+.hamburguer {
+  @include minw800 () {
+    display: none;
+  }
+}
+
+.hamburguer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  line-height: 75px;
+  background: #fff;
+}
+
+.hamburguer__input {
+  display: none;
+}
+
+.hamburguer__nav .navbar-brand {
+  color: #000;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 900;
+  text-decoration: none;
+  span {
+    color: $color-primario-4;
+    font-family: 'Sorts Mill Goudy', serif;
+  }
+}
+
+.hamburguer__nav .nav-list .nav-item {
+  cursor: pointer;
+  transition: .4s;
+}
+
+.hamburguer__nav .nav-list .nav-item:hover {
+  background: $color-primario-4;
+}
+
+.hamburguer__nav .nav-list .nav-link {
+  color: #000;
+  font-size: 18px;
+  padding: 35px 370px 35px 35px ;
+}
+
+.hamburguer__nav .navbar-toggler {
+  height: min-content;
+  margin: 18px -10px 0 0;
+  cursor: pointer;
+}
+
+.hamburguer__nav .navbar-toggler .bar {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background: $color-primario-4;
+  border-radius: 20%;
+  transition: .4s;
+}
+
+.hamburguer__input:checked ~ .hamburguer__nav .nav-list {
+  transform: translateY(0);
+}
+
+.hamburguer__input:checked ~ .hamburguer__nav .navbar-toggler {
+  margin-top: 35px;
+}
+
+.hamburguer__input:checked ~ .hamburguer__nav .navbar-toggler .bar:nth-child(1) {
+position: absolute;
+transform: rotate(45deg);
+}
+
+.hamburguer__input:checked ~ .hamburguer__nav .navbar-toggler .bar:nth-child(2) {
+  display: none;
+  }
+
+  .hamburguer__input:checked ~ .hamburguer__nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    }
+
+    @media (max-width: 800px) {
+
+      .hamburguer__nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+        border-bottom: .1px solid #00000035;
+      }
+    
+      .hamburguer__nav .nav-list .nav-item {
+        padding-left: 35px;
+      }
+    
+      .hamburguer__nav .navbar-toggler {
+        display: grid !important;
+      }
+    
+    }
+
 // ------------------Sección portada------------------
 
 .portada {
   position: relative;
-  min-height: 110vh;
+  min-height: 1188px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,16 +198,61 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  transform: translateY(-70px);
+  @include h900 () {
+    transform: translateY(-120px);
+  }
+  @include w1260 () {
+    justify-content: flex-start;
+    padding: 140px;
+    min-height: 850px;
+    gap: 20px;
+  }
+  @include h900w1260 () {
+    transform: translateY(-70px);
+  }
+  @include w1024 () {
+    padding: 140px 70px;
+  }
   &__cont-type {
     position: absolute;
     left: 5%;
     top: 17%;
+    @include w1260 () {
+      position: unset;
+    }
     h2 {
-      font-size: 5.8vw;
+      font-size: 6.96rem;
       font-weight: 400;
+      @include w1638 () {
+        font-size: 5.8rem;
+      }
+      @include h900 () {
+        margin: 0;
+        font-size: 5.2rem;
+      }
+      @include w1260 () {
+        font-size: 4rem;
+      }
+      @include w924 () {
+        font-size: 3rem;
+      }
     }
     span {
-      font-size: 5.8vw;
+      font-size: 6.96rem;
+      @include w1638 () {
+        font-size: 5.8rem;
+      }
+      @include h900 () {
+        margin: 0;
+        font-size: 5.2rem;
+      }
+      @include w1260 () {
+        font-size: 4rem;
+      }
+      @include w924 () {
+        font-size: 3rem;
+      }
     }
   }
   &__multitext {
@@ -64,7 +262,7 @@
   }
   &__cont-frase-quote {
     position: relative;
-    margin: 50px 0 50px;
+    margin: 50px 0;
     transform: translateX(-290px);
     display: flex;
     flex-direction: column;
@@ -72,6 +270,24 @@
     padding-left: 12px;
     border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.479) 5%, transparent);
     border-image-slice: 1;
+    @include w1566 () {
+      transform: translateX(-220px);
+    }
+    @include h900 () {
+      margin: 10px 0;
+      top: -75px;
+    }
+    @include w1440 () {
+      transform: translateX(-190px);
+    }
+    @include w1330 () {
+      transform: translateX(-150px);
+    }
+    @include w1260 () {
+      transform: translateX(0);
+      position: static;
+      order: 30;
+    }
     .portada__quote {
       margin: 80px 25px 0 0;
       align-self: end;
@@ -80,6 +296,12 @@
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 700;
       text-shadow: 1px 1px 1px #0000002a;
+      @include w1638 () {
+        font-size: 1.2rem;
+      }
+      @include h900 () {
+      transform: translateY(-15px);
+    }
     }
     .portada__comillas {
       font-family: 'Montagu Slab', serif;
@@ -89,16 +311,27 @@
       right: 0;
       top: 35px;
       transform: translateX(50px);
+      @include w1638 () {
+        font-size: 6rem;
+        transform: translateX(20px);
+        transform: translateY(10px);
+      }
+      @include h900 () {
+        transform: translateY(-5px);
+      }
     }
   }
   &__frase {
-    font-size: 1.75vw;
+    font-size: 2.1rem;
     font-weight: 300;
     color: #4d4d4de5;
     font-style: italic;
     text-shadow: 1px 1px 1px #00000080;
     font-family: 'Indie Flower', cursive;
     letter-spacing: 5px;
+    @include w1638 () {
+      font-size: 1.8rem;
+    }
     span {
       font-family: 'Indie Flower', cursive;
       font-weight: bold;
@@ -119,6 +352,16 @@
     transform: translateX(-250px) translateY(-50px);
     text-decoration: none;
     border-radius: 20px;
+    @include h900 () {
+      margin-top: 10px;
+      padding: .8rem;
+    }
+    @include w1260 () {
+      display: none;
+    }
+    @include h800 () {
+      transform: translateX(-250px) translateY(-70px);
+    }
     .inside-text {
       background-image: linear-gradient(45deg,hsl(194, 100%, 13%),hsl(194, 100%, 17%),hsl(194, 100%, 22%),hsl(194, 100%, 27%),hsl(194, 100%, 32%),hsl(194, 100%, 37%),hsl(194, 100%, 42%),hsl(194, 100%, 47%),hsl(194, 100%, 52%));
       background-clip: text;
@@ -133,6 +376,9 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-790%) translateY(-50px) rotate(45deg);
+    @include w1260 () {
+      display: none;
+    }
   }
   &__arrow {
     width: 30px;
@@ -149,7 +395,7 @@
     height: 455px;
     position: absolute;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
-    bottom: 40px;
+    bottom: 140px;
     right: 150px;
     opacity: 0;
     background-image: url("../img/adri-muneco.jpg");
@@ -158,6 +404,45 @@
     animation: img-circle 2s forwards ease, movimiento-circulo 8s ease-in-out infinite;
     animation-delay: 2s;
     filter: drop-shadow(1px 1px 5px rgb(0, 0, 0, 0.5)) ;
+    @include w1726 () {
+      right: 100px;
+    }
+    @include w1638 () {
+      right: 70px;
+    }
+    @include w1566 () {
+      width: 405px;
+      height: 405px;
+    }
+    @include w1440 () {
+      width: 350px;
+      height: 350px;
+    }
+    @include h900 () {
+      bottom: 210px;
+      width: 325px;
+      height: 325px;
+    }
+    @include w1377 () {
+      width: 300px;
+      height: 300px;
+    }
+    @include w1330 () {
+      width: 275px;
+      height: 275px;
+    }
+    @include w1260 () {
+      position: static;
+      order: 20;
+      animation: none;
+      opacity: 1;
+      width: 355px;
+      height: 355px;
+    }
+    @include h800 () {
+      bottom: 270px;
+      right: 50px;
+    }
   }
 }
 
@@ -218,8 +503,9 @@
   background-size: 1000px;
   background-position: 920px 10px;
   width: 100%;
-  padding: 13.25rem 0;
+  padding: 10.25rem 0;
   position: relative;
+  transform: translateY(-100px);
   &__main {
     transform: translateX(-170px);
     span {
@@ -397,7 +683,7 @@
   position: relative;
   margin: 0 0 20px 0;
   width: 100%;
-  min-height: 135vh;
+  min-height: 1318px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,7 +715,7 @@
     position: absolute;
     width: 175px;
     z-index: 10;
-    top: 202px;
+    top: 222px;
     left: 175px;
   }
   &__cont-vid {
@@ -545,7 +831,7 @@
   padding-top: 4rem;
   width: 100%;
   margin-bottom: 100px;
-  min-height: 310vh;
+  min-height: 3108px;
   & .videos__cont-titulo {
     margin-bottom: 30px;
   }
@@ -601,8 +887,8 @@
     border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
     border: 1px solid rgba(0, 0, 0, 0.479);
     box-shadow: 2px 2px 5px #00000081;
-    width: 270px;
-    height: 225px;
+    width: 330px;
+    height: 285px;
     z-index: 10;
     animation: movimiento-circulo 8s ease-in-out infinite;
   }
@@ -881,7 +1167,7 @@
   background-size: cover;
   margin: 200px 0 0 ;
   padding: 220px 0 230px;
-  min-height: 150vh;
+  min-height: 1620px;
   &__cont-img-texto {
     display: flex;
     justify-content: center;
@@ -969,6 +1255,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        @include w1900 () {
+        object-position: -10px;
+        }
       }
     }
     & audio {
@@ -1026,7 +1315,7 @@
   position: relative;
   padding-top: 7rem;
   padding-bottom: 10px;
-  min-height: 200vh;
+  min-height: 1890px;
   & .videos__cont-titulo {
     margin-bottom: 0;
   }
