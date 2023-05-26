@@ -115,10 +115,10 @@
     animation-duration: 3s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transform: translateX(-250px) translateY(-50px);
     text-decoration: none;
-    border-radius: 40px;
+    border-radius: 20px;
     .inside-text {
       background-image: linear-gradient(45deg,hsl(194, 100%, 13%),hsl(194, 100%, 17%),hsl(194, 100%, 22%),hsl(194, 100%, 27%),hsl(194, 100%, 32%),hsl(194, 100%, 37%),hsl(194, 100%, 42%),hsl(194, 100%, 47%),hsl(194, 100%, 52%));
       background-clip: text;
@@ -395,9 +395,9 @@
 
 .videos {
   position: relative;
-  margin: 40px 0 20px 0;
+  margin: 0 0 20px 0;
   width: 100%;
-  min-height: 128vh;
+  min-height: 135vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,11 +409,11 @@
     }
   }
   &__cont-titulo {
-    margin: 0 auto 100px;
+    margin: 50px auto 100px;
     width: fit-content;
     background-color: #fff;
     border-radius: 80px;
-    padding: 1rem 1rem 0.4rem;
+    padding: 1.3rem 1.3rem 0.3rem;
     box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
   }
   &__titulo {
@@ -429,7 +429,7 @@
     position: absolute;
     width: 175px;
     z-index: 10;
-    top: 130px;
+    top: 202px;
     left: 175px;
   }
   &__cont-vid {
@@ -542,7 +542,7 @@
 
 .fotos {
   position: relative;
-  padding-top: 7rem;
+  padding-top: 4rem;
   width: 100%;
   margin-bottom: 100px;
   min-height: 310vh;
@@ -552,7 +552,7 @@
   &__dicho {
     position: absolute;
     width: 360px;
-    top: 300px;
+    top: 320px;
     left: 165px;
     font-size: 1.2rem;
     line-height: 2.3rem;
@@ -574,7 +574,7 @@
   &__dicho-2 {
     position: absolute;
     width: 350px;
-    top: 1034px;
+    top: 1234px;
     right: 165px;
     font-size: 1.2rem;
     line-height: 2.3rem;
@@ -594,7 +594,7 @@
   }
   &__giff-camara {
     position: absolute;
-    top: 348px;
+    top: 450px;
     right: 180px;
     transform: rotate(5deg);
     object-fit: cover;
@@ -603,18 +603,7 @@
     box-shadow: 2px 2px 5px #00000081;
     width: 270px;
     height: 225px;
-    animation: movimiento-circulo 8s ease-in-out infinite;
-  }
-  &__giff-camara-2 {
-    position: absolute;
-    object-fit: cover;
-    top: 844px;
-    left: 135px;
-    border-radius:  43% 57% 71% 29% / 38% 60% 40% 62%    ;
-    border: 1px solid rgba(0, 0, 0, 0.479);
-    width: 340px;
-    height: 255px;
-    box-shadow: 2px 2px 5px #00000081;
+    z-index: 10;
     animation: movimiento-circulo 8s ease-in-out infinite;
   }
   &__fondo-cubo {
@@ -623,13 +612,18 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
     margin-top: 300px;
-    height: 450px;
+    height: 640px;
+    --mask: 
+    linear-gradient(0deg,#0000 30px,#000 0) 0 15px,
+    radial-gradient(15px,#000 98%,#0000) 50%/27.75px 30px repeat space;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
   }
   &__wrapper {
     position: relative;
-    top: 75px;
+    top: 170px;
     width: 300px;
     height: 300px;
     margin: 200px auto 250px;
@@ -683,9 +677,9 @@
   &__gallery-wrap {
     display: flex;
     width: 100%;
-    height: 70vh;
-    gap: 30px;
-    padding: 0 50px;
+    height: 550px;
+    gap: 35px;
+    padding: 0 120px;
   }
   &__item {
     flex: 1;
@@ -698,12 +692,13 @@
     flex-direction: column;
     justify-content: end;
     padding: 0 0 10px 10px;
-    border-top-right-radius: 50px;
+    border-radius: 50px;
     box-shadow: #e6e6e6 5px 5px 2px 0px,
 				#c7c7c7 6px 6px 2px 0px,
 				#ababab 7px 7px 2px 0px,
 				#9e9e9e 8px 8px 2px 0px,
-				#919191 9px 9px 2px 0px;
+				#919191 9px 9px 2px 0px,
+        rgba(0, 0, 0, 0.479) 10px 10px 30px 3px;
     p {
       text-shadow: 0 0 2px #000000ab;
       color: #3b3b3b;
@@ -776,7 +771,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
     transform: translateY(80px);
     h3 {
       font-size: 3rem;
@@ -793,10 +788,15 @@
     }
   }
   &__fondo-slider {
-    background-image: url("../img/fondo-carr.jpg");
+    background-image: url("../img/fondo-cubo.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    --mask: 
+    linear-gradient(0deg,#0000 30px,#000 0) 0 15px,
+    radial-gradient(15px,#000 98%,#0000) 50%/27.75px 30px repeat space;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
   }
   &__body-slider {
     display: flex;
@@ -880,7 +880,7 @@
   background-position: center;
   background-size: cover;
   margin: 200px 0 0 ;
-  padding: 150px 0 200px;
+  padding: 220px 0 230px;
   min-height: 150vh;
   &__cont-img-texto {
     display: flex;
@@ -903,8 +903,7 @@
     }
     article {
       h3 {
-        text-shadow: 1px 1px 3px #000;
-        font-weight: 500;
+        font-weight: 800;
       }
       width: 50%;
       .bold {
@@ -945,7 +944,7 @@
     z-index: 10;
     width: 200px;
     position: absolute;
-    top: 695px;
+    top: 786px;
     right: 130px;
   }
   &__cont-players {
@@ -1026,14 +1025,15 @@
 .publicidad {
   position: relative;
   padding-top: 7rem;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+  min-height: 200vh;
   & .videos__cont-titulo {
     margin-bottom: 0;
   }
   &__fondo-chispas {
     width: 100%;
     position: absolute;
-    top: 465px;
+    top: 610px;
     z-index: -10;
   }
   &__cont-tarj {
