@@ -1448,10 +1448,16 @@ h4 {
   padding-top: 4rem;
   width: 100%;
   margin-bottom: 100px;
-  min-height: 3108px;
+  min-height: 3908px;
 }
 .fotos .videos__cont-titulo {
   margin-bottom: 30px;
+}
+@media (max-width: 990px) {
+  .fotos .videos__cont-titulo {
+    margin-bottom: 0;
+    transform: translateY(50px);
+  }
 }
 .fotos__dicho {
   position: absolute;
@@ -1470,6 +1476,16 @@ h4 {
   padding-left: 15px;
   border-image: linear-gradient(to bottom, transparent 6%, rgba(0, 0, 0, 0.479) 6%, transparent);
   border-image-slice: 1;
+}
+@media (max-width: 1377px) {
+  .fotos__dicho {
+    left: 100px;
+  }
+}
+@media (max-width: 990px) {
+  .fotos__dicho {
+    display: none;
+  }
 }
 .fotos__dicho span {
   font-family: "Indie Flower", cursive;
@@ -1492,6 +1508,21 @@ h4 {
   border-image: linear-gradient(to bottom, transparent 6%, rgba(0, 0, 0, 0.479) 6%, transparent);
   border-image-slice: 1;
 }
+@media (max-width: 1566px) {
+  .fotos__dicho-2 {
+    top: 1090px;
+  }
+}
+@media (max-width: 1377px) {
+  .fotos__dicho-2 {
+    right: 100px;
+  }
+}
+@media (max-width: 990px) {
+  .fotos__dicho-2 {
+    display: none;
+  }
+}
 .fotos__dicho-2 span {
   font-family: "Indie Flower", cursive;
   font-weight: bold;
@@ -1510,6 +1541,31 @@ h4 {
   z-index: 10;
   animation: movimiento-circulo 8s ease-in-out infinite;
 }
+@media (max-width: 1860px) {
+  .fotos__giff-camara {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1726px) {
+  .fotos__giff-camara {
+    right: 100px;
+  }
+}
+@media (max-width: 1638px) {
+  .fotos__giff-camara {
+    right: 50px;
+  }
+}
+@media (max-width: 1377px) {
+  .fotos__giff-camara {
+    transform: scale(0.65);
+  }
+}
+@media (max-width: 1150px) {
+  .fotos__giff-camara {
+    display: none;
+  }
+}
 .fotos__fondo-cubo {
   background-image: url("../img/fondo-cubo.jpg");
   background-size: cover;
@@ -1525,6 +1581,22 @@ h4 {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+@media (max-width: 1566px) {
+  .fotos__fondo-cubo {
+    height: 500px;
+  }
+}
+@media (max-width: 1330px) {
+  .fotos__fondo-cubo {
+    margin-bottom: 350px;
+  }
+}
+@media (max-width: 990px) {
+  .fotos__fondo-cubo {
+    margin-top: 0;
+    margin-bottom: 175px;
+  }
+}
 .fotos__wrapper {
   position: relative;
   top: 170px;
@@ -1533,6 +1605,17 @@ h4 {
   margin: 200px auto 250px;
   perspective: 800px;
   transform: scale(1.4);
+}
+@media (max-width: 1566px) {
+  .fotos__wrapper {
+    transform: scale(1);
+    top: 100px;
+  }
+}
+@media (max-width: 1330px) {
+  .fotos__wrapper {
+    transform: scale(0.8);
+  }
 }
 .fotos__box-area {
   width: 300px;
@@ -1571,8 +1654,19 @@ h4 {
   padding-right: 0.5rem;
   box-shadow: rgba(0, 174, 184, 0.4) 5px 5px, rgba(0, 174, 184, 0.3) 10px 10px, rgba(0, 174, 184, 0.2) 15px 15px, rgba(0, 174, 184, 0.1) 20px 20px, rgba(0, 174, 184, 0.05) 25px 25px;
 }
+@media (max-width: 1150px) {
+  .fotos__cont-h3-expandible {
+    transform: translateX(0);
+    margin: 0 auto 90px;
+  }
+}
 .fotos__cont-h3-expandible h3 {
   font-size: 3rem;
+}
+@media (max-width: 560px) {
+  .fotos__cont-h3-expandible h3 {
+    font-size: 2rem;
+  }
 }
 .fotos__container {
   margin: 0 auto;
@@ -1580,14 +1674,51 @@ h4 {
 }
 .fotos__gallery-wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  height: 550px;
   gap: 35px;
   padding: 0 120px;
 }
+@media (max-width: 1037px) {
+  .fotos__gallery-wrap {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 924px) {
+  .fotos__gallery-wrap {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 860px) {
+  .fotos__gallery-wrap {
+    gap: 100px;
+    padding: 0 60px;
+  }
+}
+@media (max-width: 800px) {
+  .fotos__gallery-wrap {
+    gap: 60px;
+    padding: 0 60px;
+  }
+}
+@media (max-width: 740px) {
+  .fotos__gallery-wrap {
+    gap: 30px;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 650px) {
+  .fotos__gallery-wrap {
+    gap: 0;
+    padding: 0;
+  }
+}
 .fotos__item {
   flex: 1;
-  height: 100%;
+  height: 450px;
+  min-width: 100px;
+  max-width: 600px;
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -1598,6 +1729,20 @@ h4 {
   padding: 0 0 10px 10px;
   border-radius: 50px;
   box-shadow: #e6e6e6 5px 5px 2px 0px, #c7c7c7 6px 6px 2px 0px, #ababab 7px 7px 2px 0px, #9e9e9e 8px 8px 2px 0px, #919191 9px 9px 2px 0px, rgba(0, 0, 0, 0.479) 10px 10px 30px 3px;
+}
+@media (max-width: 860px) {
+  .fotos__item {
+    min-width: 200px;
+    max-width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .fotos__item {
+    min-width: 10px;
+    max-width: 600px;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
 .fotos__item p {
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.6705882353);
@@ -1612,6 +1757,24 @@ h4 {
   box-shadow: 0 0 5px 15px rgba(255, 255, 255, 0.7254901961);
   line-height: 1.35;
   border-radius: 5px;
+}
+@media (max-width: 1150px) {
+  .fotos__item p {
+    font-size: 1rem;
+    max-width: 200px;
+  }
+}
+@media (max-width: 560px) {
+  .fotos__item p {
+    max-width: 180px;
+    margin: 0 0 10px 10px;
+  }
+}
+@media (max-width: 390px) {
+  .fotos__item p {
+    max-width: 160px;
+    margin: 0 0 5px 5px;
+  }
 }
 .fotos__item p .subr2 {
   text-decoration: underline;
@@ -1629,8 +1792,13 @@ h4 {
   letter-spacing: 0.5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+@media (max-width: 1150px) {
+  .fotos__item p .colo {
+    font-size: 0.9rem;
+  }
+}
 .fotos__item:hover {
-  flex: 3.4;
+  flex: 7.4;
 }
 .fotos__item:hover p {
   opacity: 1;
@@ -1641,9 +1809,6 @@ h4 {
 }
 .fotos__item-1 {
   background-image: url("../img/adri-galard.jpg");
-}
-.fotos__item-1:hover {
-  flex: 2;
 }
 .fotos__item-2 {
   background-image: url("../img/adri-felap.jpg");
@@ -1657,15 +1822,11 @@ h4 {
 .fotos__item-5 {
   background-image: url("../img/adri-diploma.jpg");
 }
-.fotos__item-5:hover {
-  flex: 5;
-}
 .fotos__cont-subtitulo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  transform: translateY(80px);
+  margin-top: 150px;
 }
 .fotos__cont-subtitulo h3 {
   font-size: 3rem;
@@ -1697,9 +1858,9 @@ h4 {
   justify-content: center;
   overflow: hidden;
   height: 600px;
-  transform: scale(1.3);
-  width: 1200px;
-  margin: 175px auto 0;
+  transform: scale(1);
+  width: 100%;
+  margin: 75px auto 0;
 }
 .fotos__slider {
   position: relative;

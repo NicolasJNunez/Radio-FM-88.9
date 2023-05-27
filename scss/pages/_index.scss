@@ -1022,9 +1022,13 @@ transform: rotate(45deg);
   padding-top: 4rem;
   width: 100%;
   margin-bottom: 100px;
-  min-height: 3108px;
+  min-height: 3908px;
   & .videos__cont-titulo {
     margin-bottom: 30px;
+    @include w990 () {
+      margin-bottom: 0;
+      transform: translateY(50px);
+    }
   }
   &__dicho {
     position: absolute;
@@ -1043,6 +1047,12 @@ transform: rotate(45deg);
     padding-left: 15px;
     border-image: linear-gradient(to bottom, transparent 6% , rgba(0, 0, 0, 0.479) 6%, transparent);
     border-image-slice: 1;
+    @include w1377 () {
+      left: 100px;
+    }
+    @include w990 () {
+      display: none;
+    }
     span {
       font-family: 'Indie Flower', cursive;
       font-weight: bold;
@@ -1064,6 +1074,15 @@ transform: rotate(45deg);
     border-right: 2.3px solid;
     border-image: linear-gradient(to bottom, transparent 6% , rgba(0, 0, 0, 0.479) 6%, transparent);
     border-image-slice: 1;
+    @include w1566 () {
+      top: 1090px;
+    }
+    @include w1377 () {
+      right: 100px;
+    }
+    @include w990 () {
+      display: none;
+    }
     span {
       font-family: 'Indie Flower', cursive;
       font-weight: bold;
@@ -1082,6 +1101,21 @@ transform: rotate(45deg);
     height: 285px;
     z-index: 10;
     animation: movimiento-circulo 8s ease-in-out infinite;
+    @include w1860 () {
+      transform: scale(.8);
+    }
+    @include w1726 () {
+      right: 100px;
+    }
+    @include w1638 () {
+      right: 50px;
+    }
+    @include w1377 () {
+      transform: scale(.65);
+    }
+    @include w1150 () {
+      display: none;
+    }
   }
   &__fondo-cubo {
     background-image: url("../img/fondo-cubo.jpg");
@@ -1097,6 +1131,16 @@ transform: rotate(45deg);
     radial-gradient(15px,#000 98%,#0000) 50%/27.75px 30px repeat space;
   -webkit-mask: var(--mask);
           mask: var(--mask);
+    @include w1566 () {
+            height: 500px;
+          }
+          @include w1330 () {
+            margin-bottom: 350px;
+          }
+          @include w990 () {
+            margin-top: 0;
+            margin-bottom: 175px;
+          }
   }
   &__wrapper {
     position: relative;
@@ -1106,6 +1150,13 @@ transform: rotate(45deg);
     margin: 200px auto 250px;
     perspective: 800px;
     transform: scale(1.4);
+    @include w1566 () {
+      transform: scale(1);
+      top: 100px;
+    }
+    @include w1330 () {
+      transform: scale(.8);
+    }
   }
   &__box-area {
     width: 300px;
@@ -1143,8 +1194,15 @@ transform: rotate(45deg);
     width: fit-content;
     padding-right: .5rem;
     box-shadow: rgb(0, 174, 184,.4) 5px 5px, rgb(0, 174, 184,.3) 10px 10px, rgb(0, 174, 184,.2) 15px 15px, rgb(0, 174, 184,.1) 20px 20px, rgb(0, 174, 184,.05) 25px 25px;
+    @include w1150 () {
+      transform: translateX(0);
+      margin: 0 auto 90px;
+    }
     h3 {
       font-size: 3rem;
+      @include w560 () {
+        font-size: 2rem;
+      }
     }
   }
   &__container {
@@ -1153,14 +1211,39 @@ transform: rotate(45deg);
   }
   &__gallery-wrap {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 550px;
     gap: 35px;
     padding: 0 120px;
+    @include w1037 () {
+      padding: 0 60px;
+    }
+    @include w924 () {
+      padding: 0 30px;
+    }
+    @include w860 () {
+      gap: 100px;
+      padding: 0 60px;
+    }
+    @include w800 () {
+      gap: 60px;
+      padding: 0 60px;
+    }
+    @include w740 () {
+      gap: 30px;
+      padding: 0 40px;
+    }
+    @include w650 () {
+      gap: 0;
+      padding: 0;
+    }
   }
   &__item {
     flex: 1;
-    height: 100%;
+    height: 450px;
+    min-width: 100px;
+    max-width: 600px;
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -1176,7 +1259,17 @@ transform: rotate(45deg);
 				#9e9e9e 8px 8px 2px 0px,
 				#919191 9px 9px 2px 0px,
         rgba(0, 0, 0, 0.479) 10px 10px 30px 3px;
-    p {
+        @include w860 () {
+          min-width: 200px;
+          max-width: 600px;
+        }
+        @include w650 () {
+          min-width: 10px;
+          max-width: 600px;
+          border-radius: 0;
+          box-shadow: none;
+        }
+        p {
       text-shadow: 0 0 2px #000000ab;
       color: #3b3b3b;
       font-size: 1.3rem;
@@ -1189,6 +1282,18 @@ transform: rotate(45deg);
       box-shadow: 0 0 5px 15px #ffffffb9;
       line-height: 1.35;
       border-radius: 5px;
+      @include w1150 () {
+        font-size: 1rem;
+        max-width: 200px;
+      }
+      @include w560 () {
+        max-width: 180px;
+        margin: 0 0 10px 10px;
+      }
+      @include w390 () {
+        max-width: 160px;
+        margin: 0 0 5px 5px;
+      }
       .subr2 {
         text-decoration: underline;
       }
@@ -1204,10 +1309,13 @@ transform: rotate(45deg);
         font-size: 1.1rem;
         letter-spacing: .5px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        @include w1150 () {
+          font-size: .9rem;
+        }
       }
     }
     &:hover{
-      flex: 3.4;
+      flex: 7.4;
       p {
         opacity: 1;
       }
@@ -1221,9 +1329,6 @@ transform: rotate(45deg);
   }
   &__item-1 { 
     background-image: url('../img/adri-galard.jpg');
-    &:hover {
-      flex:2;
-  }
   }
   
   &__item-2 { 
@@ -1240,16 +1345,13 @@ transform: rotate(45deg);
   
   &__item-5 { 
     background-image: url("../img/adri-diploma.jpg");
-    &:hover {
-      flex:5;
-  }
 }
   &__cont-subtitulo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    transform: translateY(80px);
+    margin-top: 150px;
+    
     h3 {
       font-size: 3rem;
     }
@@ -1281,9 +1383,9 @@ transform: rotate(45deg);
     justify-content: center;
     overflow: hidden;
     height: 600px;
-    transform: scale(1.3);
-    width: 1200px;
-    margin: 175px auto 0;
+    transform: scale(1);
+    width: 100%;
+    margin: 75px auto 0;
   }
   &__slider {
     position: relative;
