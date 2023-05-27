@@ -257,6 +257,13 @@ h4 {
   color: #ffffff;
 }
 
+@media (max-width: 800px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
+
 .hero {
   width: 100%;
   position: sticky;

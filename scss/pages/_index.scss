@@ -1,5 +1,12 @@
 
 // ------------------Header------------------
+header {
+  @include w800 () {
+    position: sticky;
+    top: 0;
+  }
+}
+
 .hero {
   width: 100%;
   position: sticky;
