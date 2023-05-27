@@ -231,6 +231,9 @@ transform: rotate(45deg);
   @include maxw600 () {
     padding: 120px 30px;
   }
+  @include w500 () {
+    margin-top: 25px;
+  }
   @include w430 () {
     padding: 120px 20px;
   }
