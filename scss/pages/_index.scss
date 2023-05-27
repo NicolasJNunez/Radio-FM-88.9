@@ -2,7 +2,7 @@
 // ------------------Header------------------
 header {
   @include w800 () {
-    position: sticky;
+    position: fixed;
     top: 0;
   }
 }

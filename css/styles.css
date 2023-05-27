@@ -259,7 +259,7 @@ h4 {
 
 @media (max-width: 800px) {
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
   }
 }
