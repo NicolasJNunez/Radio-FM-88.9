@@ -910,14 +910,8 @@ h4 {
 }
 @media (max-width: 500px) {
   .portada__img {
-    width: 180px;
-    height: 180px;
-  }
-}
-@media (max-width: 378px) {
-  .portada__img {
-    width: 140px;
-    height: 140px;
+    width: 210px;
+    height: 210px;
   }
 }
 

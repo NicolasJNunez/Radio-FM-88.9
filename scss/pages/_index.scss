@@ -525,12 +525,8 @@ transform: rotate(45deg);
       right: 50px;
     }
     @include w500 () {
-      width: 180px;
-      height: 180px;
-    }
-    @include w378 () {
-      width: 140px;
-      height: 140px;
+      width: 210px;
+      height: 210px;
     }
   }
 }
