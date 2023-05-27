@@ -372,12 +372,17 @@ h4 {
 
 .hamburguer__nav .navbar-brand {
   color: #000;
-  font-size: 28px;
+  font-size: 1.9rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   font-family: "Sorts Mill Goudy", serif;
   font-weight: 900;
   text-decoration: none;
+}
+@media (max-width: 420px) {
+  .hamburguer__nav .navbar-brand {
+    font-size: 1.5rem;
+  }
 }
 .hamburguer__nav .navbar-brand span {
   color: hsl(183, 100%, 36%);
@@ -412,6 +417,14 @@ h4 {
   background: hsl(183, 100%, 36%);
   border-radius: 20%;
   transition: 0.4s;
+}
+@media (max-width: 420px) {
+  .hamburguer__nav .navbar-toggler .bar {
+    width: 35px;
+    height: 3px;
+    margin-bottom: 8px;
+    transform: translateY(6px);
+  }
 }
 
 .hamburguer__input:checked ~ .hamburguer__nav .nav-list {
@@ -494,6 +507,11 @@ h4 {
 @media (max-width: 600px) {
   .portada {
     padding: 120px 30px;
+  }
+}
+@media (max-width: 430px) {
+  .portada {
+    padding: 120px 20px;
   }
 }
 .portada__cont-type {
@@ -681,6 +699,7 @@ h4 {
 @media (max-width: 378px) {
   .portada__cont-frase-quote .portada__quote {
     font-size: 1rem;
+    margin: 50px 25px 0 0;
   }
 }
 .portada__cont-frase-quote .portada__comillas {
@@ -735,7 +754,7 @@ h4 {
 }
 @media (max-width: 378px) {
   .portada__frase {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-right: 35px;
   }
 }
@@ -878,14 +897,14 @@ h4 {
 }
 @media (max-width: 500px) {
   .portada__img {
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
   }
 }
 @media (max-width: 378px) {
   .portada__img {
-    width: 225px;
-    height: 225px;
+    width: 140px;
+    height: 140px;
   }
 }
 

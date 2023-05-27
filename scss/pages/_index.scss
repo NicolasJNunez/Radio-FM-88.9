@@ -101,12 +101,15 @@
 
 .hamburguer__nav .navbar-brand {
   color: #000;
-  font-size: 28px;
+  font-size: 1.9rem;
   font-weight: 500;
   letter-spacing: .5px;
   font-family: 'Sorts Mill Goudy', serif;
   font-weight: 900;
   text-decoration: none;
+  @include w420 () {
+    font-size: 1.5rem;
+  }
   span {
     color: $color-primario-4;
     font-family: 'Sorts Mill Goudy', serif;
@@ -141,6 +144,12 @@
   background: $color-primario-4;
   border-radius: 20%;
   transition: .4s;
+  @include w420 () {
+    width: 35px;
+    height: 3px;
+    margin-bottom: 8px;
+    transform: translateY(6px);
+  }
 }
 
 .hamburguer__input:checked ~ .hamburguer__nav .nav-list {
@@ -220,6 +229,9 @@ transform: rotate(45deg);
   }
   @include maxw600 () {
     padding: 120px 30px;
+  }
+  @include w430 () {
+    padding: 120px 20px;
   }
   &__cont-type {
     position: absolute;
@@ -347,6 +359,7 @@ transform: rotate(45deg);
       }
       @include w378 () {
         font-size: 1rem;
+        margin: 50px 25px 0 0;
       }
     }
     .portada__comillas {
@@ -388,7 +401,7 @@ transform: rotate(45deg);
       padding-right: 40px;
     }
     @include w378 () {
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding-right: 35px;
     }
     span {
@@ -503,12 +516,12 @@ transform: rotate(45deg);
       right: 50px;
     }
     @include w500 () {
-      width: 300px;
-      height: 300px;
+      width: 180px;
+      height: 180px;
     }
     @include w378 () {
-      width: 225px;
-      height: 225px;
+      width: 140px;
+      height: 140px;
     }
   }
 }
