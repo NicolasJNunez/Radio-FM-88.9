@@ -1,12 +1,5 @@
 
 // ------------------Header------------------
-header {
-  @include w800 () {
-    position: fixed;
-    top: 0;
-  }
-}
-
 .hero {
   width: 100%;
   position: sticky;
@@ -90,8 +83,11 @@ header {
   @include minw800 () {
     display: none;
   }
-  position: sticky;
-  top: 0;
+  @include w800 () {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
 }
 
 .hamburguer__nav {
