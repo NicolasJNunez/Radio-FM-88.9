@@ -83,6 +83,8 @@
   @include minw800 () {
     display: none;
   }
+  position: sticky;
+  top: 0;
 }
 
 .hamburguer__nav {
