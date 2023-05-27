@@ -267,6 +267,9 @@ transform: rotate(45deg);
       @include w528 () {
         font-size: 2rem;
       }
+      @include w500 () {
+        margin-bottom: 15px;
+      }
       @include w430 () {
         font-size: 1.7rem;
       }
