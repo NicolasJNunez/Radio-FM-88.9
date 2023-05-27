@@ -14,6 +14,12 @@ $cinco-claro: hsl(194, 100%, 63%);
   }
 }
 
+@mixin w1860 {
+  @media (max-width:1860px) {
+    @content;
+  }
+}
+
 @mixin w1726 {
   @media (max-width:1726px) {
     @content;
@@ -34,6 +40,12 @@ $cinco-claro: hsl(194, 100%, 63%);
 
 @mixin w1566 {
   @media (max-width:1566px) {
+    @content;
+  }
+}
+
+@mixin w1531 {
+  @media (max-width:1531px) {
     @content;
   }
 }
@@ -88,6 +100,12 @@ $cinco-claro: hsl(194, 100%, 63%);
 
 @mixin w1150 {
   @media (max-width:1150px) {
+    @content;
+  }
+}
+
+@mixin w1037 {
+  @media (max-width:1037px) {
     @content;
   }
 }
@@ -208,6 +226,12 @@ $cinco-claro: hsl(194, 100%, 63%);
 
 @mixin w478 {
   @media (max-width:478px) {
+    @content;
+  }
+}
+
+@mixin w444 {
+  @media (max-width:444px) {
     @content;
   }
 }

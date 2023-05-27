@@ -825,6 +825,18 @@ transform: rotate(45deg);
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(45deg,hsl(183, 100%, 13%), $color-primario-4);
+  @include w1531 () {
+    min-height: 1980px;
+  }
+  @include w1037 () {
+    min-height: 2740px;
+  }
+  @include w725 () {
+    min-height: 2790px;
+  }
+  @include maxw600 () {
+    min-height: 2690px;
+  }
   &__cont-contenido {
     margin-top: -70px;
     iframe {
@@ -838,6 +850,15 @@ transform: rotate(45deg);
     border-radius: 80px;
     padding: 1.3rem 1.3rem 0.3rem;
     box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
+    @include w1260 () {
+      margin-bottom: 40px;
+    }
+    @include w725 () {
+      margin-bottom: 0;
+    }
+    @include maxw600 () {
+      margin-bottom: 100px;
+    }
   }
   &__titulo {
     margin: 0;
@@ -852,12 +873,30 @@ transform: rotate(45deg);
     position: absolute;
     width: 175px;
     z-index: 10;
-    top: 222px;
+    top: 229px;
     left: 175px;
+    @include w1260 () {
+      display: none;
+    }
   }
   &__cont-vid {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    @include w1037 () {
+      gap: 100px;
+    }
+    @include w725 () {
+      padding: 75px;
+    }
+    @include maxw600 () {
+      padding: 0;
+    }
+    @include w390 () {
+      gap: 0;
+    }
     h3 {
       font-size: 1.8rem;
       -webkit-text-stroke-width: 1px;
@@ -872,11 +911,24 @@ transform: rotate(45deg);
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex-basis: 560px;
+      flex: 1;
+      min-width: 444px;
+      max-width: 560px;
       background-color: #fff;
       border-radius: 30px;
       overflow: hidden;
       box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.5);
+      @include maxw600 () {
+        flex-basis: 100%;
+        max-width: none;
+        border-radius: 0;
+      }
+      @include w444 () {
+        transform: scale(.9);
+      }
+      @include w390 () {
+        transform: scale(.8);
+      }
     }
     figure {
       width: 100%;
@@ -884,14 +936,16 @@ transform: rotate(45deg);
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      iframe {
+        width: 100%;
+      }
     }
     & figcaption {
-      width: 500px;
+      width: 100%;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       gap: 20px;
-      text-align: justify;
       h3 {
         text-align: center;
       }
@@ -903,7 +957,7 @@ transform: rotate(45deg);
       background-color: $color-primario-2;
     }
     a {
-      margin-bottom: 30px;
+      margin: 0 auto;
     }
   }
 }
