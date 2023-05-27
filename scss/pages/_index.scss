@@ -15,7 +15,7 @@
     font-size: 1.2rem;
     background-color: white;
     width: 100%;
-    height: 150px;
+    height: 100px;
     @include w1726 () {
       padding-left: 5%;
       padding-right: 5%;
@@ -42,6 +42,7 @@
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-template-rows: 75px 75px;
+      height: 150px;
     }
     @include w800 () {
       display: none;
@@ -89,6 +90,9 @@
   padding: 0 15%;
   line-height: 75px;
   background: #fff;
+  @include w500 () {
+    padding: 0 10%;
+  }
 }
 
 .hamburguer__input {
@@ -214,6 +218,9 @@ transform: rotate(45deg);
   @include w1024 () {
     padding: 140px 70px;
   }
+  @include maxw600 () {
+    padding: 120px 30px;
+  }
   &__cont-type {
     position: absolute;
     left: 5%;
@@ -237,6 +244,18 @@ transform: rotate(45deg);
       @include w924 () {
         font-size: 3rem;
       }
+      @include w720 () {
+        font-size: 2.5rem;
+      }
+      @include w528 () {
+        font-size: 2rem;
+      }
+      @include w430 () {
+        font-size: 1.7rem;
+      }
+      @include w378 () {
+        font-size: 1.5rem;
+      }
     }
     span {
       font-size: 6.96rem;
@@ -252,6 +271,18 @@ transform: rotate(45deg);
       }
       @include w924 () {
         font-size: 3rem;
+      }
+      @include w720 () {
+        font-size: 2.5rem;
+      }
+      @include w528 () {
+        font-size: 2rem;
+      }
+      @include w430 () {
+        font-size: 1.7rem;
+      }
+      @include w378 () {
+        font-size: 1.5rem;
       }
     }
   }
@@ -288,6 +319,15 @@ transform: rotate(45deg);
       position: static;
       order: 30;
     }
+    @include w720 () {
+      margin: 25px 0;
+    }
+    @include w500 () {
+      margin: 15px 0;
+    }
+    @include w378 () {
+      margin: 10px 0;
+    }
     .portada__quote {
       margin: 80px 25px 0 0;
       align-self: end;
@@ -301,7 +341,13 @@ transform: rotate(45deg);
       }
       @include h900 () {
       transform: translateY(-15px);
-    }
+      }
+      @include w500 () {
+      transform: translateY(-22.5px);
+      }
+      @include w378 () {
+        font-size: 1rem;
+      }
     }
     .portada__comillas {
       font-family: 'Montagu Slab', serif;
@@ -319,6 +365,9 @@ transform: rotate(45deg);
       @include h900 () {
         transform: translateY(-5px);
       }
+      @include w378 () {
+        font-size: 5rem;
+      }
     }
   }
   &__frase {
@@ -331,6 +380,16 @@ transform: rotate(45deg);
     letter-spacing: 5px;
     @include w1638 () {
       font-size: 1.8rem;
+    }
+    @include w720 () {
+      font-size: 1.3rem;
+    }
+    @include w500 () {
+      padding-right: 40px;
+    }
+    @include w378 () {
+      font-size: 1.1rem;
+      padding-right: 35px;
     }
     span {
       font-family: 'Indie Flower', cursive;
@@ -442,6 +501,14 @@ transform: rotate(45deg);
     @include h800 () {
       bottom: 270px;
       right: 50px;
+    }
+    @include w500 () {
+      width: 300px;
+      height: 300px;
+    }
+    @include w378 () {
+      width: 225px;
+      height: 225px;
     }
   }
 }
