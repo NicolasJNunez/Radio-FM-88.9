@@ -382,6 +382,7 @@ h4 {
 @media (max-width: 420px) {
   .hamburguer__nav .navbar-brand {
     font-size: 1.5rem;
+    transform: translateY(5px);
   }
 }
 .hamburguer__nav .navbar-brand span {
