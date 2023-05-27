@@ -341,6 +341,9 @@ transform: rotate(45deg);
     @include w378 () {
       margin: 10px 0;
     }
+    @include w430 () {
+      margin-left: 12px;
+    }
     .portada__quote {
       margin: 80px 25px 0 0;
       align-self: end;

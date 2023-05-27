@@ -673,6 +673,11 @@ h4 {
     margin: 10px 0;
   }
 }
+@media (max-width: 430px) {
+  .portada__cont-frase-quote {
+    margin-left: 12px;
+  }
+}
 .portada__cont-frase-quote .portada__quote {
   margin: 80px 25px 0 0;
   align-self: end;
