@@ -2008,6 +2008,16 @@ h4 {
   padding: 220px 0 230px;
   min-height: 1620px;
 }
+@media (max-width: 1350px) {
+  .audioteca .videos__titulo {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 1350px) {
+  .audioteca .videos__cont-titulo {
+    padding-top: 0.6rem;
+  }
+}
 .audioteca__cont-img-texto {
   display: flex;
   justify-content: center;
@@ -2018,6 +2028,30 @@ h4 {
   float: left;
   shape-outside: ellipse(50% 50%);
   margin-right: 1rem;
+}
+@media (max-width: 1418px) {
+  .audioteca__cont-img-texto img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 990px) {
+  .audioteca__cont-img-texto img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 660px) {
+  .audioteca__cont-img-texto img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 478px) {
+  .audioteca__cont-img-texto img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .audioteca__texto {
   display: flex;
@@ -2033,6 +2067,36 @@ h4 {
 }
 .audioteca__texto article h3 {
   font-weight: 800;
+}
+@media (max-width: 1377px) {
+  .audioteca__texto article {
+    width: 60%;
+  }
+}
+@media (max-width: 1150px) {
+  .audioteca__texto article {
+    width: 70%;
+  }
+}
+@media (max-width: 932px) {
+  .audioteca__texto article {
+    width: 80%;
+  }
+}
+@media (max-width: 835px) {
+  .audioteca__texto article {
+    width: 90%;
+  }
+}
+@media (max-width: 740px) {
+  .audioteca__texto article {
+    width: 75%;
+  }
+}
+@media (max-width: 430px) {
+  .audioteca__texto article {
+    width: 82.5%;
+  }
 }
 .audioteca__texto article .bold {
   font-weight: 700;
@@ -2052,6 +2116,22 @@ h4 {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
+@media (max-width: 1480px) {
+  .audioteca__texto article h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1418px) {
+  .audioteca__texto article h3 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 442px) {
+  .audioteca__texto article h3 {
+    margin-top: 25px;
+    font-size: 1.5rem;
+  }
+}
 .audioteca__texto article p {
   font-size: 1.5rem;
   color: #5c5c5c;
@@ -2061,10 +2141,30 @@ h4 {
   border-image-slice: 1;
   line-height: 1.35;
 }
+@media (max-width: 1801px) {
+  .audioteca__texto article p {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 1709px) {
+  .audioteca__texto article p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1492px) {
+  .audioteca__texto article p {
+    font-size: 1.15rem;
+  }
+}
 .audioteca__texto article p::first-letter {
   font-size: 2rem;
   font-weight: 100;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media (max-width: 990px) {
+  .audioteca__texto article p {
+    font-size: 1rem;
+  }
 }
 .audioteca__sticker {
   z-index: 10;
@@ -2073,11 +2173,37 @@ h4 {
   top: 786px;
   right: 130px;
 }
+@media (max-width: 1887px) {
+  .audioteca__sticker {
+    top: 800px;
+  }
+}
+@media (max-width: 1801px) {
+  .audioteca__sticker {
+    top: 786px;
+  }
+}
+@media (max-width: 1580px) {
+  .audioteca__sticker {
+    top: 810px;
+  }
+}
+@media (max-width: 1492px) {
+  .audioteca__sticker {
+    top: 790px;
+  }
+}
+@media (max-width: 1418px) {
+  .audioteca__sticker {
+    display: none;
+  }
+}
 .audioteca__cont-players {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 0 4rem;
+  justify-content: center;
 }
 .audioteca__player {
   min-width: 350px;

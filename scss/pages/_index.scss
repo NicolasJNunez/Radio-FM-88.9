@@ -1508,6 +1508,16 @@ transform: rotate(45deg);
   margin: 200px 0 0 ;
   padding: 220px 0 230px;
   min-height: 1620px;
+  .videos__titulo {
+    @include w1350 () {
+    font-size: 3.5rem;
+    }
+  }
+  .videos__cont-titulo {
+    @include w1350 () {
+    padding-top: .6rem;
+    }
+  }
   &__cont-img-texto {
     display: flex;
     justify-content: center;
@@ -1517,6 +1527,22 @@ transform: rotate(45deg);
       float: left;
       shape-outside: ellipse(50% 50%);
       margin-right: 1rem;
+      @include w1418 () {
+        width: 300px;
+      height: 300px;
+      }
+      @include w990 () {
+        width: 250px;
+      height: 250px;
+      }
+      @include w660 () {
+        width: 200px;
+      height: 200px;
+      }
+      @include w478 () {
+        width: 150px;
+      height: 150px;
+      }
     }
   }
   &__texto {
@@ -1532,6 +1558,24 @@ transform: rotate(45deg);
         font-weight: 800;
       }
       width: 50%;
+      @include w1377 () {
+        width: 60%;
+      }
+      @include w1150 () {
+        width: 70%;
+      }
+      @include w932 () {
+        width: 80%;
+      }
+      @include w835 () {
+        width: 90%;
+      }
+      @include w740 () {
+        width: 75%;
+      }
+      @include w430 () {
+        width: 82.5%;
+      }
       .bold {
         font-weight: 700;
       }
@@ -1549,6 +1593,16 @@ transform: rotate(45deg);
       h3 {
         font-size: 2.5rem;
         margin-bottom: 15px;
+        @include w1480 () {
+          font-size: 2rem;
+        }
+        @include w1418 () {
+          font-size: 1.7rem;
+        }
+        @include w442 () {
+          margin-top: 25px;
+          font-size: 1.5rem;
+        }
       }
       p {
         font-size: 1.5rem;
@@ -1558,10 +1612,22 @@ transform: rotate(45deg);
         border-image: linear-gradient(to bottom, transparent 3% , rgba(0, 0, 0, 0.479) 3%, transparent);
         border-image-slice: 1;
         line-height: 1.35;
+        @include w1801 () {
+          font-size: 1.35rem;
+        }
+        @include w1709 () {
+          font-size: 1.25rem;
+        }
+        @include w1492 () {
+          font-size: 1.15rem;
+        }
         &::first-letter {
           font-size: 2rem;
           font-weight: 100;
           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        @include w990 () {
+          font-size: 1rem;
         }
       }
     }
@@ -1572,12 +1638,28 @@ transform: rotate(45deg);
     position: absolute;
     top: 786px;
     right: 130px;
+    @include w1887 () {
+      top: 800px;
+    }
+    @include w1801 () {
+      top: 786px;
+    }
+    @include w1580 () {
+      top: 810px;
+    }
+    @include w1492 () {
+      top: 790px;
+    }
+    @include w1418 () {
+      display: none;
+    }
   }
   &__cont-players {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 4rem;
+    justify-content: center;
   }
   &__player {
     min-width: 350px;
