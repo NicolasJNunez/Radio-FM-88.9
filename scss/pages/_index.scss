@@ -16,6 +16,7 @@
     background-color: white;
     width: 100%;
     height: 100px;
+    border-bottom: .1px solid #0000005a;
     @include w1726 () {
       padding-left: 5%;
       padding-right: 5%;
@@ -514,7 +515,7 @@ transform: rotate(45deg);
     @include w1260 () {
       position: static;
       order: 20;
-      animation: none;
+      animation: movimiento-circulo 8s ease-in-out infinite;
       opacity: 1;
       width: 355px;
       height: 355px;
@@ -594,8 +595,22 @@ transform: rotate(45deg);
   padding: 10.25rem 0;
   position: relative;
   transform: translateY(-100px);
+  @include w1680 () {
+    background-image: none;
+  }
   &__main {
     transform: translateX(-170px);
+    @include w1680 () {
+      transform: translateX(0px);
+    }
+    @include w1150 () {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+    }
+    @include w528 () {
+      gap: 60px;
+    }
     span {
       font-family: 'Josefin Sans', sans-serif;
     }
@@ -613,6 +628,15 @@ transform: rotate(45deg);
   position: relative;
   transform: scale(1.5);
   margin-top: -150px;
+  @include w1150 () {
+    order: 20;
+  }
+  @include w528 () {
+    transform: scale(1.2);
+  }
+  @include w378 () {
+    transform: scale(1);
+  }
 }
 
 &__person-container {
@@ -651,6 +675,18 @@ transform: rotate(45deg);
 
   &__text {
     width: 550px;
+    @include w1150 () {
+      order: 70;
+    }
+    @include w720 () {
+      width: 75%;
+    }
+    @include w478 () {
+      width: 82.5%;
+      .about__title {
+        font-size: 3.25rem;
+      }
+    }
   }
 
   &__main {
@@ -665,6 +701,10 @@ transform: rotate(45deg);
     font-size: 4.68rem;
     text-transform: capitalize;
     margin-bottom: 20px;
+    @include w1150 () {
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
   &__text h5 {
     letter-spacing: 2px;
@@ -676,6 +716,9 @@ transform: rotate(45deg);
     line-height: 1.75rem;
     font-size: 1.125rem;
     margin-bottom: 45px;
+    @include w378 () {
+      font-size: 1rem;
+    }
   }
   & a {
     @include a;
@@ -685,6 +728,10 @@ transform: rotate(45deg);
     gap: 20px;
     align-items: center;
     color: #5a5a5acc;
+    @include w720 () {
+      flex-direction: column;
+      gap: 30px;
+    }
     span {
       text-align: center;
       font-style: italic;
@@ -704,6 +751,9 @@ transform: rotate(45deg);
     top: 37.5%;
     width: 80px;
     height: 225px;
+    @include w1250 () {
+      display: none;
+    }
     ul {
       display: flex;
       flex-direction: column;
