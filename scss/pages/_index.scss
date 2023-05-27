@@ -83,11 +83,6 @@
   @include minw800 () {
     display: none;
   }
-  @include w800 () {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
 }
 
 .hamburguer__nav {

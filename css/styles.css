@@ -353,13 +353,6 @@ h4 {
     display: none;
   }
 }
-@media (max-width: 800px) {
-  .hamburguer {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
-}
 
 .hamburguer__nav {
   display: flex;
