@@ -1597,6 +1597,11 @@ h4 {
     margin-bottom: 175px;
   }
 }
+@media (max-width: 442px) {
+  .fotos__fondo-cubo {
+    height: 400px;
+  }
+}
 .fotos__wrapper {
   position: relative;
   top: 170px;
@@ -1615,6 +1620,22 @@ h4 {
 @media (max-width: 1330px) {
   .fotos__wrapper {
     transform: scale(0.8);
+  }
+}
+@media (max-width: 500px) {
+  .fotos__wrapper {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 442px) {
+  .fotos__wrapper {
+    transform: scale(0.6);
+    top: 65px;
+  }
+}
+@media (max-width: 390px) {
+  .fotos__wrapper {
+    transform: scale(0.5);
   }
 }
 .fotos__box-area {
@@ -1831,6 +1852,16 @@ h4 {
 .fotos__cont-subtitulo h3 {
   font-size: 3rem;
 }
+@media (max-width: 670px) {
+  .fotos__cont-subtitulo h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 528px) {
+  .fotos__cont-subtitulo h3 {
+    font-size: 2rem;
+  }
+}
 .fotos__cont-subtitulo span {
   font-size: 1.4rem;
   font-weight: 300;
@@ -1840,6 +1871,21 @@ h4 {
   font-family: "Indie Flower", cursive;
   letter-spacing: 5px;
   transform: translateY(15px);
+}
+@media (max-width: 670px) {
+  .fotos__cont-subtitulo span {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 528px) {
+  .fotos__cont-subtitulo span {
+    letter-spacing: 2.5px;
+  }
+}
+@media (max-width: 420px) {
+  .fotos__cont-subtitulo span {
+    letter-spacing: 1.1px;
+  }
 }
 .fotos__fondo-slider {
   background-image: url("../img/fondo-cubo.jpg");
@@ -1856,11 +1902,42 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   height: 600px;
   transform: scale(1);
   width: 100%;
   margin: 75px auto 0;
+}
+@media (max-width: 924px) {
+  .fotos__body-slider {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 800px) {
+  .fotos__body-slider {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 740px) {
+  .fotos__body-slider {
+    transform: scale(0.7);
+    height: 400px;
+  }
+}
+@media (max-width: 670px) {
+  .fotos__body-slider {
+    transform: scale(0.6);
+  }
+}
+@media (max-width: 560px) {
+  .fotos__body-slider {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 478px) {
+  .fotos__body-slider {
+    transform: scale(0.4);
+    height: 300px;
+  }
 }
 .fotos__slider {
   position: relative;

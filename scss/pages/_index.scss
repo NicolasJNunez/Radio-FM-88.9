@@ -1141,6 +1141,9 @@ transform: rotate(45deg);
             margin-top: 0;
             margin-bottom: 175px;
           }
+          @include w442 () {
+            height: 400px;
+          }
   }
   &__wrapper {
     position: relative;
@@ -1156,6 +1159,16 @@ transform: rotate(45deg);
     }
     @include w1330 () {
       transform: scale(.8);
+    }
+    @include w500 () {
+      transform: scale(.7);
+    }
+    @include w442 () {
+      transform: scale(.6);
+      top: 65px;
+    }
+    @include w390 () {
+      transform: scale(.5);
     }
   }
   &__box-area {
@@ -1354,6 +1367,12 @@ transform: rotate(45deg);
     
     h3 {
       font-size: 3rem;
+      @include w670 () {
+        font-size: 2.5rem;
+      }
+      @include w528 () {
+        font-size: 2rem;
+      }
     }
     span {
       font-size: 1.4rem;
@@ -1364,6 +1383,15 @@ transform: rotate(45deg);
       font-family: 'Indie Flower', cursive;
       letter-spacing: 5px;
       transform: translateY(15px);
+      @include w670 () {
+        font-size: 1rem;
+      }
+      @include w528 () {
+        letter-spacing: 2.5px;
+      }
+      @include w420 () {
+        letter-spacing: 1.1px;
+      }
     }
   }
   &__fondo-slider {
@@ -1381,11 +1409,30 @@ transform: rotate(45deg);
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     height: 600px;
     transform: scale(1);
     width: 100%;
     margin: 75px auto 0;
+    @include w924 () {
+      transform: scale(.9);
+    }
+    @include w800 () {
+      transform: scale(.8);
+    }
+    @include w740 () {
+      transform: scale(.7);
+      height: 400px;
+    }
+    @include w670 () {
+      transform: scale(.6);
+    }
+    @include w560 () {
+      transform: scale(.5);
+    }
+    @include w478 () {
+      transform: scale(.4);
+      height: 300px;
+    }
   }
   &__slider {
     position: relative;
