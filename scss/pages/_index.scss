@@ -456,7 +456,8 @@ transform: rotate(45deg);
     left: 50%;
     transform: translateX(-790%) translateY(-50px) rotate(45deg);
     @include w1260 () {
-      display: none;
+      order: 70;
+      transform: translateX(80%) translateY(-50px) rotate(45deg);
     }
   }
   &__arrow {

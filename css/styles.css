@@ -821,7 +821,8 @@ h4 {
 }
 @media (max-width: 1260px) {
   .portada__arrow-container {
-    display: none;
+    order: 70;
+    transform: translateX(80%) translateY(-50px) rotate(45deg);
   }
 }
 .portada__arrow {
