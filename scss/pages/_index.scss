@@ -109,7 +109,7 @@
   text-decoration: none;
   @include w420 () {
     font-size: 1.5rem;
-    transform: translateY(5px);
+    transform: translateY(4.5px);
   }
   span {
     color: $color-primario-4;
@@ -149,7 +149,7 @@
     width: 35px;
     height: 3px;
     margin-bottom: 8px;
-    transform: translateY(6px);
+    transform: translateY(7px);
   }
 }
 
