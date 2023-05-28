@@ -99,7 +99,7 @@ h4 {
 
 .card, .card--9, .card--8, .card--7, .card--6, .card--5, .card--4, .card--3, .card--2 {
   width: 252px;
-  height: 245px;
+  height: auto;
   background: white;
   border-radius: 30px;
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
@@ -115,45 +115,42 @@ h4 {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .card--2 {
-  height: 590px;
+  height: auto;
   order: 7;
 }
 .card--3 {
-  height: 412px;
+  height: auto;
   order: 4;
 }
 .card--4 {
-  height: 490px;
+  height: auto;
   order: 5;
 }
 .card--5 {
-  height: 690px;
+  height: auto;
   order: 8;
 }
 .card--6 {
-  height: 700px;
+  height: auto;
   order: 9;
 }
 .card--7 {
-  height: 382px;
+  height: auto;
   order: 3;
 }
 .card--8 {
-  height: 580px;
+  height: auto;
   order: 6;
 }
 .card--9 {
-  height: 240px;
+  height: auto;
   order: 1;
 }
 
-.img, .img--2 {
+.img {
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-}
-.img--2 {
-  height: 450px;
 }
 
 .text {
@@ -2294,11 +2291,11 @@ h4 {
 .publicidad {
   position: relative;
   padding-top: 7rem;
-  padding-bottom: 10px;
+  padding-bottom: 10rem;
   min-height: 1890px;
 }
 .publicidad .videos__cont-titulo {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 @media (max-width: 879px) {
   .publicidad .videos__titulo {
@@ -2308,7 +2305,7 @@ h4 {
 .publicidad__fondo-chispas {
   width: 100%;
   position: absolute;
-  top: 610px;
+  bottom: 0;
   z-index: -10;
 }
 .publicidad__cont-tarj {
@@ -2322,8 +2319,8 @@ h4 {
 }
 .publicidad__cont-tarj > * {
   flex: 1;
-  min-width: 300px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .custom-shape-divider-bottom-1684252060 {

@@ -1746,10 +1746,10 @@ transform: rotate(45deg);
 .publicidad {
   position: relative;
   padding-top: 7rem;
-  padding-bottom: 10px;
+  padding-bottom: 10rem;
   min-height: 1890px;
   & .videos__cont-titulo {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
   .videos__titulo {
     @include w879 () {
@@ -1759,7 +1759,7 @@ transform: rotate(45deg);
   &__fondo-chispas {
     width: 100%;
     position: absolute;
-    top: 610px;
+    bottom: 0;
     z-index: -10;
   }
   &__cont-tarj {
@@ -1772,8 +1772,8 @@ transform: rotate(45deg);
     align-items: center;
     & > * {
       flex: 1;
-      min-width: 300px;
-      max-width: 400px;
+      min-width: 250px;
+      max-width: 300px;
     }
   }
 }

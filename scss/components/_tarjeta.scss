@@ -1,6 +1,6 @@
 .card {
   width: 252px;
-  height: 245px;
+  height: auto;
   background: white;
   border-radius: 30px;
   box-shadow: 15px 15px 30px #bebebe,
@@ -17,42 +17,42 @@
 }
   &--2 {
     @extend .card;
-    height: 590px;
+    height: auto;
     order: 7;
   }
   &--3 {
     @extend .card;
-    height: 412px;
+    height: auto;
     order: 4;
   }
   &--4 {
     @extend .card;
-    height: 490px;
+    height: auto;;
     order: 5;
   }
   &--5 {
     @extend .card;
-    height: 690px;
+    height: auto;
     order: 8
   }
   &--6 {
     @extend .card;
-    height: 700px;
+    height: auto;
     order: 9;
   }
   &--7 {
     @extend .card;
-    height: 382px;
+    height: auto;
     order: 3;
   }
   &--8 {
     @extend .card;
-    height: 580px;
+    height: auto;
     order: 6;
   }
   &--9 {
     @extend .card;
-    height: 240px;
+    height: auto;
     order: 1;
   }
 }
@@ -61,10 +61,6 @@
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  &--2 {
-    @extend .img;
-    height: 450px;
-  }
 }
 
 .text {

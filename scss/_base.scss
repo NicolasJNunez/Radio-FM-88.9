@@ -13,6 +13,12 @@ $cinco-claro: hsl(194, 100%, 63%);
   }
 }
 
+@mixin w1888 {
+  @media (max-width:1888px) {
+    @content;
+  }
+}
+
 @mixin w1887 {
   @media (max-width:1887px) {
     @content;
