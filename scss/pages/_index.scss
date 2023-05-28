@@ -841,6 +841,12 @@ transform: rotate(45deg);
   @include maxw600 () {
     min-height: 2690px;
   }
+  @include w478 () {
+    min-height: 2740px;
+  }
+  @include w444 () {
+    min-height: 2840px;
+  }
   &__cont-contenido {
     margin-top: -70px;
     iframe {
@@ -899,7 +905,7 @@ transform: rotate(45deg);
       padding: 0;
     }
     @include w390 () {
-      gap: 0;
+      gap: 50px;
     }
     h3 {
       font-size: 1.8rem;
@@ -927,11 +933,8 @@ transform: rotate(45deg);
         max-width: none;
         border-radius: 0;
       }
-      @include w444 () {
-        transform: scale(.9);
-      }
-      @include w390 () {
-        transform: scale(.8);
+      @include w478 () {
+        min-width: 200px;
       }
     }
     figure {
@@ -1282,7 +1285,7 @@ transform: rotate(45deg);
         }
         @include w650 () {
           min-width: 5px;
-          max-width: 100%;
+          max-width: 50px;
           border-radius: 0;
           box-shadow: none;
         }
