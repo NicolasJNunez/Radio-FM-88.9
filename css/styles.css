@@ -404,6 +404,12 @@ h4 {
   color: #000;
   font-size: 18px;
   padding: 35px 370px 35px 35px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .hamburguer__nav .nav-list .nav-link {
+    padding-right: 100px;
+  }
 }
 
 .hamburguer__nav .navbar-toggler {
@@ -1759,8 +1765,8 @@ h4 {
 }
 @media (max-width: 650px) {
   .fotos__item {
-    min-width: 10px;
-    max-width: 600px;
+    min-width: 5px;
+    max-width: 100%;
     border-radius: 0;
     box-shadow: none;
   }
@@ -1770,7 +1776,7 @@ h4 {
   color: #3b3b3b;
   font-size: 1.3rem;
   max-width: 300px;
-  opacity: 0;
+  display: none;
   transition: opacity 2s ease;
   margin: 0 0 20px 20px;
   background-color: rgba(255, 255, 255, 0.7254901961);
@@ -1822,7 +1828,7 @@ h4 {
   flex: 7.4;
 }
 .fotos__item:hover p {
-  opacity: 1;
+  display: block;
 }
 .fotos__item:not(:hover) p {
   opacity: 0;
@@ -2288,6 +2294,11 @@ h4 {
 }
 .publicidad .videos__cont-titulo {
   margin-bottom: 0;
+}
+@media (max-width: 879px) {
+  .publicidad .videos__titulo {
+    font-size: 3rem;
+  }
 }
 .publicidad__fondo-chispas {
   width: 100%;

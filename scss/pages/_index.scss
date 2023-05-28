@@ -131,6 +131,10 @@
   color: #000;
   font-size: 18px;
   padding: 35px 370px 35px 35px ;
+  width: 100%;
+  @include maxw600 () {
+    padding-right: 100px;
+  }
 }
 
 .hamburguer__nav .navbar-toggler {
@@ -1277,8 +1281,8 @@ transform: rotate(45deg);
           max-width: 600px;
         }
         @include w650 () {
-          min-width: 10px;
-          max-width: 600px;
+          min-width: 5px;
+          max-width: 100%;
           border-radius: 0;
           box-shadow: none;
         }
@@ -1287,7 +1291,7 @@ transform: rotate(45deg);
       color: #3b3b3b;
       font-size: 1.3rem;
       max-width: 300px;
-      opacity: 0;
+      display: none;
       transition: opacity 2s ease;
       margin: 0 0 20px 20px;
       background-color: #ffffffb9;
@@ -1330,7 +1334,7 @@ transform: rotate(45deg);
     &:hover{
       flex: 7.4;
       p {
-        opacity: 1;
+        display: block;
       }
     }
     &:not(:hover) {
@@ -1743,6 +1747,11 @@ transform: rotate(45deg);
   min-height: 1890px;
   & .videos__cont-titulo {
     margin-bottom: 0;
+  }
+  .videos__titulo {
+    @include w879 () {
+      font-size: 3rem;
+    }
   }
   &__fondo-chispas {
     width: 100%;
