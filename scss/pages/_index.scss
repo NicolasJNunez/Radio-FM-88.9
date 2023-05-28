@@ -1550,6 +1550,9 @@ transform: rotate(45deg);
     flex-direction: column;
     align-items: center;
     margin-bottom: 150px;
+    @include w1418 () {
+      margin-bottom: 75px;
+    }
     .videos__cont-titulo {
       margin: 0 0 80px;
     }

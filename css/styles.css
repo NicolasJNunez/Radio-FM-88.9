@@ -2059,6 +2059,11 @@ h4 {
   align-items: center;
   margin-bottom: 150px;
 }
+@media (max-width: 1418px) {
+  .audioteca__texto {
+    margin-bottom: 75px;
+  }
+}
 .audioteca__texto .videos__cont-titulo {
   margin: 0 0 80px;
 }
