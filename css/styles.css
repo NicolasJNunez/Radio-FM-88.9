@@ -975,7 +975,7 @@ h4 {
   width: 100%;
   position: relative;
   min-height: auto;
-  padding-top: 9rem;
+  padding-top: 9.5rem;
 }
 @media (max-width: 1680px) {
   .about {
