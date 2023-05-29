@@ -205,6 +205,12 @@ $cinco-claro: hsl(194, 100%, 63%);
   }
 }
 
+@mixin w772 {
+  @media (max-width:772px) {
+    @content;
+  }
+}
+
 @mixin w740 {
   @media (max-width:740px) {
     @content;
@@ -303,6 +309,12 @@ $cinco-claro: hsl(194, 100%, 63%);
 
 @mixin w420 {
   @media (max-width:420px) {
+    @content;
+  }
+}
+
+@mixin w402 {
+  @media (max-width:402px) {
     @content;
   }
 }

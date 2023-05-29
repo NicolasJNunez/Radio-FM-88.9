@@ -1464,7 +1464,6 @@ h4 {
 @media (max-width: 990px) {
   .fotos .videos__cont-titulo {
     margin-bottom: 0;
-    transform: translateY(50px);
   }
 }
 .fotos__dicho {
@@ -1492,7 +1491,18 @@ h4 {
 }
 @media (max-width: 990px) {
   .fotos__dicho {
-    display: none;
+    position: unset;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0 20%;
+    transform: translateY(100px);
+  }
+}
+@media (max-width: 579px) {
+  .fotos__dicho {
+    padding: 0 10%;
   }
 }
 .fotos__dicho span {
@@ -1528,7 +1538,23 @@ h4 {
 }
 @media (max-width: 990px) {
   .fotos__dicho-2 {
-    display: none;
+    position: unset;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0 27.5%;
+    transform: translateY(-90px);
+  }
+}
+@media (max-width: 772px) {
+  .fotos__dicho-2 {
+    padding: 0 20%;
+  }
+}
+@media (max-width: 579px) {
+  .fotos__dicho-2 {
+    padding: 0 12.5%;
   }
 }
 .fotos__dicho-2 span {
@@ -1915,33 +1941,34 @@ h4 {
   width: 100%;
   margin: 75px auto 0;
 }
-@media (max-width: 924px) {
+@media (max-width: 800px) {
   .fotos__body-slider {
     transform: scale(0.9);
   }
 }
-@media (max-width: 800px) {
-  .fotos__body-slider {
-    transform: scale(0.8);
-  }
-}
 @media (max-width: 740px) {
   .fotos__body-slider {
-    transform: scale(0.7);
+    transform: scale(0.8);
     height: 400px;
   }
 }
 @media (max-width: 670px) {
   .fotos__body-slider {
-    transform: scale(0.6);
+    transform: scale(0.7);
   }
 }
 @media (max-width: 560px) {
   .fotos__body-slider {
-    transform: scale(0.5);
+    transform: scale(0.6);
   }
 }
 @media (max-width: 478px) {
+  .fotos__body-slider {
+    transform: scale(0.5);
+    height: 300px;
+  }
+}
+@media (max-width: 402px) {
   .fotos__body-slider {
     transform: scale(0.4);
     height: 300px;
@@ -2218,11 +2245,21 @@ h4 {
   padding: 0 4rem;
   justify-content: center;
 }
+@media (max-width: 442px) {
+  .audioteca__cont-players {
+    padding: 0;
+  }
+}
 .audioteca__player {
   min-width: 350px;
   max-width: 500px;
   background: #f1f3f4;
   flex: 1;
+}
+@media (max-width: 442px) {
+  .audioteca__player {
+    min-width: 100%;
+  }
 }
 .audioteca__player .audioteca__imgbox {
   position: relative;

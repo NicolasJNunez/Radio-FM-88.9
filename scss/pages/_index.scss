@@ -1034,7 +1034,6 @@ transform: rotate(45deg);
     margin-bottom: 30px;
     @include w990 () {
       margin-bottom: 0;
-      transform: translateY(50px);
     }
   }
   &__dicho {
@@ -1058,7 +1057,16 @@ transform: rotate(45deg);
       left: 100px;
     }
     @include w990 () {
-      display: none;
+      position: unset;
+      letter-spacing: 1px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 0 20%;
+      transform: translateY(100px);
+    }
+    @include w579 () {
+      padding: 0 10%;
     }
     span {
       font-family: 'Indie Flower', cursive;
@@ -1088,7 +1096,19 @@ transform: rotate(45deg);
       right: 100px;
     }
     @include w990 () {
-      display: none;
+      position: unset;
+      letter-spacing: 1px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 0 27.5%;
+      transform: translateY(-90px);
+    }
+    @include w772 () {
+      padding: 0 20%;
+    }
+    @include w579 () {
+      padding: 0 12.5%;
     }
     span {
       font-family: 'Indie Flower', cursive;
@@ -1420,23 +1440,24 @@ transform: rotate(45deg);
     transform: scale(1);
     width: 100%;
     margin: 75px auto 0;
-    @include w924 () {
+    @include w800 () {
       transform: scale(.9);
     }
-    @include w800 () {
-      transform: scale(.8);
-    }
     @include w740 () {
-      transform: scale(.7);
+      transform: scale(.8);
       height: 400px;
     }
     @include w670 () {
-      transform: scale(.6);
+      transform: scale(.7);
     }
     @include w560 () {
-      transform: scale(.5);
+      transform: scale(.6);
     }
     @include w478 () {
+      transform: scale(.5);
+      height: 300px;
+    }
+    @include w402 () {
       transform: scale(.4);
       height: 300px;
     }
@@ -1670,12 +1691,18 @@ transform: rotate(45deg);
     gap: 20px;
     padding: 0 4rem;
     justify-content: center;
+    @include w442 () {
+      padding: 0;
+    }
   }
   &__player {
     min-width: 350px;
     max-width: 500px;
     background: #f1f3f4;
     flex: 1;
+    @include w442 () {
+      min-width: 100%;
+    }
     & .audioteca__imgbox {
       position: relative;
       width: 100%;
