@@ -557,6 +557,7 @@ h4 {
 @media (max-width: 924px) {
   .portada__cont-type h2 {
     font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
   }
 }
 @media (max-width: 720px) {
