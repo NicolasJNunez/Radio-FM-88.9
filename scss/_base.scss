@@ -379,6 +379,14 @@ $cinco-claro: hsl(194, 100%, 63%);
   }
 }
 
+// ---- Min Width ----
+
+@mixin minw1612 {
+  @media (min-width:1612px) {
+    @content;
+  }
+  }
+
 // ---- Height MQ ----
 
 @mixin h900 {

@@ -596,9 +596,9 @@ transform: rotate(45deg);
   background-size: 1000px;
   background-position: 920px 10px;
   width: 100%;
-  padding: 10.25rem 0;
   position: relative;
-  transform: translateY(-100px);
+  min-height: auto;
+  padding-top: 9rem;
   @include w1680 () {
     background-image: none;
   }
@@ -808,6 +808,7 @@ transform: rotate(45deg);
       transform: rotate(45deg);
       margin: -10px;
       animation: animatte-arrow 2s infinite;
+      margin-bottom: 350px;
       &:nth-child(2) {
         animation-delay: -0.2s;
         transform: rotate(45deg) translate(-20px, -20px);
@@ -824,30 +825,13 @@ transform: rotate(45deg);
 .videos {
   position: relative;
   margin: 0 0 20px 0;
+  padding-top: 180px;
   width: 100%;
-  min-height: 1318px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(45deg,hsl(183, 100%, 13%), $color-primario-4);
-  @include w1531 () {
-    min-height: 1980px;
-  }
-  @include w1037 () {
-    min-height: 2740px;
-  }
-  @include w725 () {
-    min-height: 2790px;
-  }
-  @include maxw600 () {
-    min-height: 2690px;
-  }
-  @include w478 () {
-    min-height: 2740px;
-  }
-  @include w444 () {
-    min-height: 2840px;
-  }
+  background: $color-primario-4;
   &__cont-contenido {
     margin-top: -70px;
     iframe {
@@ -896,6 +880,7 @@ transform: rotate(45deg);
     flex-wrap: wrap;
     gap: 50px;
     padding: 50px;
+    margin-bottom: 75px;
     @include w1037 () {
       gap: 100px;
     }
@@ -904,6 +889,7 @@ transform: rotate(45deg);
     }
     @include maxw600 () {
       padding: 0;
+      margin-bottom: 150px;
     }
     @include w390 () {
       gap: 50px;
@@ -979,49 +965,6 @@ transform: rotate(45deg);
   }
 }
 
-.custom-shape-divider-top-1684286448 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1684286448 svg {
-  position: relative;
-  display: block;
-  width: calc(273% + 1.3px);
-  height: 73px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1684286448 .shape-fill {
-  fill: #FFFFFF;
-}
-
-.custom-shape-divider-bottom-1684286415 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1684286415 svg {
-  position: relative;
-  display: block;
-  width: calc(273% + 1.3px);
-  height: 73px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1684286415 .shape-fill {
-  fill: #FFFFFF;
-}
-
 
 // ------------------Sección Fotos------------------
 
@@ -1029,8 +972,7 @@ transform: rotate(45deg);
   position: relative;
   padding-top: 4rem;
   width: 100%;
-  margin-bottom: 100px;
-  min-height: 2058px;
+  min-height: auto;
   & .videos__cont-titulo {
     margin-bottom: 30px;
     @include w990 () {
@@ -1463,6 +1405,7 @@ transform: rotate(45deg);
     transform: scale(1);
     width: 100%;
     margin: 75px auto 0;
+    margin-bottom: 150px;
     @include w800 () {
       transform: scale(.9);
     }
@@ -1556,9 +1499,8 @@ transform: rotate(45deg);
   background-image: url("../img/fondo-audio.jpg");
   background-position: center;
   background-size: cover;
-  margin: 200px 0 0 ;
-  padding: 220px 0 230px;
-  min-height: 1620px;
+  padding: 220px 0 0;
+  min-height: auto;
   .videos__titulo {
     @include w1350 () {
     font-size: 3.5rem;
@@ -1714,6 +1656,7 @@ transform: rotate(45deg);
     gap: 20px;
     padding: 0 4rem;
     justify-content: center;
+    margin-bottom: 100px;
     @include w442 () {
       padding: 0;
     }
@@ -1749,46 +1692,46 @@ transform: rotate(45deg);
   }
 }
 
-.custom-shape-divider-top-1684522749 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
+// .custom-shape-divider-top-1684522749 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+// }
 
-.custom-shape-divider-top-1684522749 svg {
-  position: relative;
-  display: block;
-  width: calc(199% + 1.3px);
-  height: 84px;
-}
+// .custom-shape-divider-top-1684522749 svg {
+//   position: relative;
+//   display: block;
+//   width: calc(199% + 1.3px);
+//   height: 84px;
+// }
 
-.custom-shape-divider-top-1684522749 .shape-fill {
-  fill: #FFFFFF;
-}
+// .custom-shape-divider-top-1684522749 .shape-fill {
+//   fill: #FFFFFF;
+// }
 
-.custom-shape-divider-bottom-1684523877 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
+// .custom-shape-divider-bottom-1684523877 {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+//   transform: rotate(180deg);
+// }
 
-.custom-shape-divider-bottom-1684523877 svg {
-  position: relative;
-  display: block;
-  width: calc(187% + 1.3px);
-  height: 63px;
-}
+// .custom-shape-divider-bottom-1684523877 svg {
+//   position: relative;
+//   display: block;
+//   width: calc(187% + 1.3px);
+//   height: 63px;
+// }
 
-.custom-shape-divider-bottom-1684523877 .shape-fill {
-  fill: #FFFFFF;
-}
+// .custom-shape-divider-bottom-1684523877 .shape-fill {
+//   fill: #FFFFFF;
+// }
 
 
 // ------------------Sección Publicidad------------------
@@ -1796,8 +1739,10 @@ transform: rotate(45deg);
 .publicidad {
   position: relative;
   padding-top: 7rem;
-  padding-bottom: 10rem;
   min-height: 1890px;
+  @include minw1612 () {
+    min-height: auto;
+  }
   & .videos__cont-titulo {
     margin-bottom: 50px;
   }
@@ -1828,23 +1773,48 @@ transform: rotate(45deg);
   }
 }
 
-.custom-shape-divider-bottom-1684252060 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1684252060 svg {
+.waves {
   position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 75px;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
 }
 
-.custom-shape-divider-bottom-1684252060 .shape-fill {
-  fill: $color-primario-4;
+// Animación ondas
+
+.parallax> use{
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media (max-width:768px) {
+  .waves {
+    height: 70px;
+    min-height: 70px;
+  }
 }
