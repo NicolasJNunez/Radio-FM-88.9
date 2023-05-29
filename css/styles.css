@@ -1718,9 +1718,12 @@ h4 {
 .fotos__cont-h3-expandible h3 {
   font-size: 3rem;
 }
-@media (max-width: 560px) {
+@media (max-width: 650px) {
   .fotos__cont-h3-expandible h3 {
-    font-size: 2rem;
+    font-size: 3.3rem;
+  }
+  .fotos__cont-h3-expandible h3 span {
+    display: none;
   }
 }
 .fotos__container {
@@ -1763,12 +1766,6 @@ h4 {
     padding: 0 40px;
   }
 }
-@media (max-width: 650px) {
-  .fotos__gallery-wrap {
-    gap: 0;
-    padding: 0;
-  }
-}
 .fotos__item {
   flex: 1;
   height: 450px;
@@ -1777,7 +1774,7 @@ h4 {
   background-position: center;
   background-size: cover;
   background-repeat: none;
-  transition: flex 1s ease;
+  transition: flex 2s ease;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -1793,10 +1790,7 @@ h4 {
 }
 @media (max-width: 650px) {
   .fotos__item {
-    min-width: 5px;
-    max-width: 50px;
-    border-radius: 0;
-    box-shadow: none;
+    min-width: 300px;
   }
 }
 .fotos__item p {
@@ -1804,8 +1798,8 @@ h4 {
   color: #3b3b3b;
   font-size: 1.3rem;
   max-width: 300px;
-  display: none;
-  transition: opacity 2s ease;
+  opacity: 0;
+  transition: opacity 1s ease-in;
   margin: 0 0 20px 20px;
   background-color: rgba(255, 255, 255, 0.7254901961);
   padding: 5px;
@@ -1819,16 +1813,19 @@ h4 {
     max-width: 200px;
   }
 }
+@media (max-width: 650px) {
+  .fotos__item p {
+    opacity: 1;
+  }
+}
 @media (max-width: 560px) {
   .fotos__item p {
     max-width: 180px;
-    margin: 0 0 10px 10px;
   }
 }
 @media (max-width: 390px) {
   .fotos__item p {
     max-width: 160px;
-    margin: 0 0 5px 5px;
   }
 }
 .fotos__item p .subr2 {
@@ -1856,14 +1853,25 @@ h4 {
   flex: 7.4;
 }
 .fotos__item:hover p {
-  display: block;
+  opacity: 1;
 }
 .fotos__item:not(:hover) p {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+@media (max-width: 650px) {
+  .fotos__item:not(:hover) p {
+    opacity: 1;
+  }
+}
 .fotos__item-1 {
   background-image: url("../img/adri-galard.jpg");
+}
+@media (max-width: 650px) {
+  .fotos__item-1 p {
+    align-self: end;
+    margin: 0 30px 20px 0;
+  }
 }
 .fotos__item-2 {
   background-image: url("../img/adri-felap.jpg");
@@ -1876,6 +1884,22 @@ h4 {
 }
 .fotos__item-5 {
   background-image: url("../img/adri-diploma.jpg");
+}
+@media (max-width: 860px) {
+  .fotos__item-5 p {
+    opacity: 1;
+    align-self: end;
+    margin: 0 30px 20px 0;
+  }
+  .fotos__item-5 p:not(:hover) {
+    opacity: 1;
+  }
+}
+@media (max-width: 650px) {
+  .fotos__item-5 p {
+    align-self: end;
+    margin: 0 30px 20px 0;
+  }
 }
 .fotos__cont-subtitulo {
   display: flex;

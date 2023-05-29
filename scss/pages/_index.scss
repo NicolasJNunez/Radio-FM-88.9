@@ -1240,8 +1240,11 @@ transform: rotate(45deg);
     }
     h3 {
       font-size: 3rem;
-      @include w560 () {
-        font-size: 2rem;
+      @include w650 () {
+        font-size: 3.3rem;
+        span {
+          display: none;
+        }
       }
     }
   }
@@ -1274,10 +1277,6 @@ transform: rotate(45deg);
       gap: 30px;
       padding: 0 40px;
     }
-    @include w650 () {
-      gap: 0;
-      padding: 0;
-    }
   }
   &__item {
     flex: 1;
@@ -1287,7 +1286,7 @@ transform: rotate(45deg);
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    transition: flex 1s ease;
+    transition: flex 2s ease;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -1304,18 +1303,15 @@ transform: rotate(45deg);
           max-width: 600px;
         }
         @include w650 () {
-          min-width: 5px;
-          max-width: 50px;
-          border-radius: 0;
-          box-shadow: none;
+          min-width: 300px;
         }
         p {
       text-shadow: 0 0 2px #000000ab;
       color: #3b3b3b;
       font-size: 1.3rem;
       max-width: 300px;
-      display: none;
-      transition: opacity 2s ease;
+      opacity: 0;
+      transition: opacity 1s ease-in;
       margin: 0 0 20px 20px;
       background-color: #ffffffb9;
       padding: 5px;
@@ -1326,13 +1322,14 @@ transform: rotate(45deg);
         font-size: 1rem;
         max-width: 200px;
       }
+      @include w650 () {
+        opacity: 1;
+      }
       @include w560 () {
         max-width: 180px;
-        margin: 0 0 10px 10px;
       }
       @include w390 () {
         max-width: 160px;
-        margin: 0 0 5px 5px;
       }
       .subr2 {
         text-decoration: underline;
@@ -1357,18 +1354,27 @@ transform: rotate(45deg);
     &:hover{
       flex: 7.4;
       p {
-        display: block;
+        opacity: 1;
       }
     }
     &:not(:hover) {
       p {
         opacity: 0;
         transition: opacity .5s ease;
+        @include w650 () {
+          opacity: 1;
+        }
       }
     }
   }
   &__item-1 { 
     background-image: url('../img/adri-galard.jpg');
+    @include w650 () {
+      p {
+        align-self: end;
+        margin: 0 30px 20px 0;
+      }
+    }
   }
   
   &__item-2 { 
@@ -1385,6 +1391,22 @@ transform: rotate(45deg);
   
   &__item-5 { 
     background-image: url("../img/adri-diploma.jpg");
+    @include w860 () {
+      p {
+        opacity: 1;
+        align-self: end;
+        margin: 0 30px 20px 0;
+      }
+      p:not(:hover) {
+            opacity: 1;
+        }
+    }
+    @include w650 () {
+      p {
+        align-self: end;
+        margin: 0 30px 20px 0;
+      }
+    }
 }
   &__cont-subtitulo {
     display: flex;
