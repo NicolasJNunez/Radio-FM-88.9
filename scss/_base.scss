@@ -253,6 +253,12 @@ $cinco-claro: hsl(194, 100%, 63%);
   }
 }
 
+@mixin w606 {
+  @media (max-width:606px) {
+    @content;
+  }
+}
+
 @mixin maxw600 {
   @media (max-width: 600px) {
     @content;
@@ -271,6 +277,12 @@ $cinco-claro: hsl(194, 100%, 63%);
   }
 }
 
+@mixin w540 {
+  @media (max-width:540px) {
+    @content;
+  }
+}
+
 @mixin w528 {
   @media (max-width:528px) {
     @content;
@@ -285,6 +297,12 @@ $cinco-claro: hsl(194, 100%, 63%);
 
 @mixin w478 {
   @media (max-width:478px) {
+    @content;
+  }
+}
+
+@mixin w456 {
+  @media (max-width:456px) {
     @content;
   }
 }

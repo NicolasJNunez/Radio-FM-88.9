@@ -233,14 +233,14 @@ transform: rotate(45deg);
   @include w1024 () {
     padding: 140px 70px;
   }
-  @include maxw600 () {
+  @include w720 () {
     padding: 120px 30px;
+  }
+  @include w606 () {
+    padding: 120px 0px;
   }
   @include w500 () {
     margin-top: 25px;
-  }
-  @include w430 () {
-    padding: 120px 20px;
   }
   &__cont-type {
     position: absolute;
@@ -266,20 +266,17 @@ transform: rotate(45deg);
         font-size: 3rem;
         text-shadow: 1px 1px 1px black;
       }
-      @include w720 () {
+      @include w540 () {
         font-size: 2.5rem;
-      }
-      @include w528 () {
-        font-size: 2rem;
       }
       @include w500 () {
         margin-bottom: 15px;
       }
-      @include w430 () {
-        font-size: 1.7rem;
+      @include w456 () {
+        font-size: 2rem;
       }
       @include w378 () {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
     }
     span {
@@ -297,17 +294,14 @@ transform: rotate(45deg);
       @include w924 () {
         font-size: 3rem;
       }
-      @include w720 () {
+      @include w540 () {
         font-size: 2.5rem;
       }
-      @include w528 () {
+      @include w456 () {
         font-size: 2rem;
       }
-      @include w430 () {
-        font-size: 1.7rem;
-      }
       @include w378 () {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
     }
   }
@@ -345,16 +339,10 @@ transform: rotate(45deg);
       order: 30;
     }
     @include w720 () {
-      margin: 25px 0;
+      margin: 0 70px;
     }
-    @include w500 () {
-      margin: 15px 0;
-    }
-    @include w378 () {
-      margin: 10px 0;
-    }
-    @include w430 () {
-      margin-left: 12px;
+    @include w560 () {
+      margin: 0 40px;
     }
     .portada__quote {
       margin: 80px 25px 0 0;
@@ -413,8 +401,8 @@ transform: rotate(45deg);
     @include w720 () {
       font-size: 1.3rem;
     }
-    @include w500 () {
-      padding-right: 40px;
+    @include w650 () {
+      padding-right: 50px;
     }
     @include w378 () {
       font-size: 1rem;
@@ -532,9 +520,21 @@ transform: rotate(45deg);
       bottom: 270px;
       right: 50px;
     }
+    @include w540 () {
+      width: 240px;
+      height: 240px;
+    }
     @include w500 () {
       width: 210px;
       height: 210px;
+    }
+    @include w456 () {
+      width: 180px;
+      height: 180px;
+    }
+    @include w378 () {
+      width: 160px;
+      height: 160px;
     }
   }
 }
