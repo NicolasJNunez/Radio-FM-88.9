@@ -456,6 +456,9 @@ transform: rotate(45deg);
       order: 70;
       transform: translateX(80%) translateY(-50px) rotate(45deg);
     }
+    @include w720 () {
+      transform: translateX(80%) translateY(-10px) rotate(45deg);
+    }
   }
   &__arrow {
     width: 30px;
