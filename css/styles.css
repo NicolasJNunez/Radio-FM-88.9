@@ -1100,6 +1100,22 @@ h4 {
   font-size: 1rem;
   font-family: "Indie Flower", cursive;
 }
+.about__cont-btn-texto span .subr22 {
+  text-decoration: underline;
+}
+.about__cont-btn-texto span .colo22 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: normal;
+  color: hsl(194, 100%, 33%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.about__cont-btn-texto span .backgr22 {
+  font-style: normal;
+  padding: 0 0.2rem 0.3rem 0.2rem;
+  background-color: hsl(29, 97%, 86%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .about__cont-btn-texto span strong {
   font-family: "Indie Flower", cursive;
   font-style: normal;

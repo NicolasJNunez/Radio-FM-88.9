@@ -714,6 +714,23 @@ transform: rotate(45deg);
       font-style: italic;
       font-size: 1rem;
       font-family: 'Indie Flower', cursive;
+      .subr22 {
+        text-decoration: underline;
+      }
+      .colo22 {
+        font-size: 1rem;
+        font-weight: bold;
+        font-style: normal;
+        color: $color-primario-5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .backgr22 {
+        font-style: normal;
+        padding: 0 .2rem .3rem .2rem;
+        background-color: $color-primario-2;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      }
       strong {
         font-family: 'Indie Flower', cursive;
         font-style: normal;
