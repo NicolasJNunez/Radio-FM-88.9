@@ -223,7 +223,7 @@ transform: rotate(45deg);
   }
   @include w1260 () {
     justify-content: flex-start;
-    padding: 140px;
+    padding: 100px 140px 140px 140px;
     min-height: 850px;
     gap: 20px;
   }
@@ -231,13 +231,13 @@ transform: rotate(45deg);
     transform: translateY(-70px);
   }
   @include w1024 () {
-    padding: 140px 70px;
+    padding: 100px 70px 140px;
   }
-  @include w720 () {
-    padding: 120px 30px;
+  @include w924 () {
+    padding: 80px 30px;
   }
   @include w606 () {
-    padding: 120px 0px;
+    padding: 70px 0px;
   }
   @include w500 () {
     margin-top: 25px;

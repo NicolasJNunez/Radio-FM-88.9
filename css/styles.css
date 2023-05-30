@@ -494,7 +494,7 @@ h4 {
 @media (max-width: 1260px) {
   .portada {
     justify-content: flex-start;
-    padding: 140px;
+    padding: 100px 140px 140px 140px;
     min-height: 850px;
     gap: 20px;
   }
@@ -506,17 +506,17 @@ h4 {
 }
 @media (max-width: 1024px) {
   .portada {
-    padding: 140px 70px;
+    padding: 100px 70px 140px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 924px) {
   .portada {
-    padding: 120px 30px;
+    padding: 80px 30px;
   }
 }
 @media (max-width: 606px) {
   .portada {
-    padding: 120px 0px;
+    padding: 70px 0px;
   }
 }
 @media (max-width: 500px) {
