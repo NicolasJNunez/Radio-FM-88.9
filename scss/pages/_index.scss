@@ -250,58 +250,31 @@ transform: rotate(45deg);
       position: unset;
     }
     h2 {
-      font-size: 6.96rem;
-      font-weight: 400;
-      @include w1638 () {
-        font-size: 5.8rem;
-      }
-      @include h900 () {
-        margin: 0;
-        font-size: 5.2rem;
-      }
-      @include w1260 () {
-        font-size: 4rem;
-      }
-      @include w924 () {
-        font-size: 3rem;
-        text-shadow: 1px 1px 1px black;
-      }
-      @include w540 () {
-        font-size: 2.5rem;
-      }
-      @include w500 () {
-        margin-bottom: 15px;
-      }
-      @include w456 () {
-        font-size: 2rem;
-      }
-      @include w378 () {
-        font-size: 1.7rem;
-      }
+      text-shadow: 1px 1px 1px black;
     }
     span {
-      font-size: 6.96rem;
+      font-size: 7.96rem;
       @include w1638 () {
-        font-size: 5.8rem;
+        font-size: 6.8rem;
       }
       @include h900 () {
         margin: 0;
         font-size: 5.2rem;
       }
       @include w1260 () {
-        font-size: 4rem;
+        font-size: 5rem;
       }
       @include w924 () {
-        font-size: 3rem;
+        font-size: 4rem;
       }
       @include w540 () {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
       }
       @include w456 () {
-        font-size: 2rem;
+        font-size: 2.8rem;
       }
       @include w378 () {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
       }
     }
   }
