@@ -519,11 +519,6 @@ h4 {
     padding: 70px 0px;
   }
 }
-@media (max-width: 500px) {
-  .portada {
-    margin-top: 25px;
-  }
-}
 .portada__cont-type {
   position: absolute;
   left: 5%;

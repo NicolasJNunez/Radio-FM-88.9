@@ -239,9 +239,6 @@ transform: rotate(45deg);
   @include w606 () {
     padding: 70px 0px;
   }
-  @include w500 () {
-    margin-top: 25px;
-  }
   &__cont-type {
     position: absolute;
     left: 5%;
