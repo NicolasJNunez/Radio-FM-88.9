@@ -774,7 +774,7 @@ h4 {
 }
 @media (max-width: 720px) {
   .portada__arrow-container {
-    transform: translateX(80%) translateY(-10px) rotate(45deg);
+    transform: translateX(80%) translateY(-30px) rotate(45deg);
   }
 }
 .portada__arrow {
