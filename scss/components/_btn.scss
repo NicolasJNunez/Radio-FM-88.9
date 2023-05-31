@@ -52,11 +52,11 @@
   right: 30px;
   background-image: url("../img/imagen-grupo-radio.png");
   background-position: center;
-  background-size: cover;
+  background-size: 70px 63px;
   border-radius: 50px;
   text-align: center;
   font-size: 1.875rem;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
   z-index: 100;
   @include maxw600 () {
     font-size: 1.3rem;
@@ -71,5 +71,5 @@
 .btn-wsp2:hover {
   filter: brightness(104%);
   text-decoration: none;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 }
