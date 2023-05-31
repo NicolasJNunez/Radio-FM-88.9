@@ -719,7 +719,7 @@ h4 {
   font-weight: 300;
   color: rgba(77, 77, 77, 0.8980392157);
   font-style: italic;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5294117647);
+  text-shadow: 0 0 2px #000000;
   letter-spacing: 3px;
 }
 @media (max-width: 1638px) {
