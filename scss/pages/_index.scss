@@ -1240,7 +1240,7 @@ transform: rotate(45deg);
           min-width: 300px;
         }
         p {
-      text-shadow: 0 0 1px #ffffff85;
+      text-shadow: 0 0 1px #30303085;
       color: #2e2e2e;
       font-size: 1.3rem;
       max-width: 300px;
@@ -1248,9 +1248,9 @@ transform: rotate(45deg);
       opacity: 0;
       transition: opacity 1s ease-in;
       margin: 0 0 20px 20px;
-      background-color: #ffffff7e;
+      background-color: #ffffffa1;
       padding: 5px;
-      box-shadow: 0 0 5px 15px #ffffff7e;
+      box-shadow: 0 0 5px 15px #ffffffa1;
       line-height: 1.35;
       border-radius: 5px;
       @include w1150 () {
