@@ -1735,6 +1735,7 @@ h4 {
   color: #2e2e2e;
   font-size: 1.3rem;
   max-width: 300px;
+  font-weight: 600;
   opacity: 0;
   transition: opacity 1s ease-in;
   margin: 0 0 20px 20px;
