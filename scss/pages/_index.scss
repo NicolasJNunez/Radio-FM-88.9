@@ -1240,7 +1240,7 @@ transform: rotate(45deg);
           min-width: 300px;
         }
         p {
-      text-shadow: 0 0 2px #ffffffab;
+      text-shadow: 0 0 1px #ffffff85;
       color: #2e2e2e;
       font-size: 1.3rem;
       max-width: 300px;
@@ -1304,6 +1304,7 @@ transform: rotate(45deg);
   }
   &__item-1 { 
     background-image: url('../img/adri-galard.jpg');
+    order: 10;
     @include w650 () {
       p {
         align-self: end;

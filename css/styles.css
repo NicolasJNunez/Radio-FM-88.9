@@ -1731,7 +1731,7 @@ h4 {
   }
 }
 .fotos__item p {
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6705882353);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5215686275);
   color: #2e2e2e;
   font-size: 1.3rem;
   max-width: 300px;
@@ -1804,6 +1804,7 @@ h4 {
 }
 .fotos__item-1 {
   background-image: url("../img/adri-galard.jpg");
+  order: 10;
 }
 @media (max-width: 650px) {
   .fotos__item-1 p {
