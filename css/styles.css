@@ -618,7 +618,7 @@ h4 {
   flex-direction: column;
   border-left: 2.8px solid;
   padding-left: 12px;
-  border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.479) 5%, transparent);
+  border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.784) 5%, transparent);
   border-image-slice: 1;
 }
 @media (max-width: 1566px) {
@@ -662,7 +662,7 @@ h4 {
 .portada__cont-frase-quote .portada__quote {
   margin: 80px 25px 0 0;
   align-self: end;
-  color: rgba(0, 0, 0, 0.4666666667);
+  color: rgba(0, 0, 0, 0.7294117647);
   font-size: 1.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1647058824);

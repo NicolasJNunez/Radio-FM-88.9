@@ -288,7 +288,7 @@ transform: rotate(45deg);
     flex-direction: column;
     border-left: 2.8px solid;
     padding-left: 12px;
-    border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.479) 5%, transparent);
+    border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.784) 5%, transparent);
     border-image-slice: 1;
     @include w1566 () {
       transform: translateX(-220px);
@@ -317,7 +317,7 @@ transform: rotate(45deg);
     .portada__quote {
       margin: 80px 25px 0 0;
       align-self: end;
-      color: #00000077;
+      color: #000000ba;
       font-size: 1.5rem;
       
       font-weight: 700;
