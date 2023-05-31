@@ -360,9 +360,9 @@ transform: rotate(45deg);
   &__frase {
     font-size: 2.1rem;
     font-weight: 300;
-    color: #4d4d4de5;
+    color: #2a2a2ae5;
     font-style: italic;
-    text-shadow: 0 0 2px #000000;
+    text-shadow: 0 0 1px #000000a0;
     letter-spacing: 3px;
     @include w1638 () {
       font-size: 1.8rem;
