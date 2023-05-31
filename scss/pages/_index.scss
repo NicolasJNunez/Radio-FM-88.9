@@ -726,7 +726,8 @@ transform: rotate(45deg);
       }
       .backgr22 {
         font-style: normal;
-        padding: 0 .2rem .3rem .2rem;
+        padding: 0 .2rem .25rem .2rem;
+        color: $color-primario-5;
         background-color: $color-primario-2;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -1240,15 +1241,15 @@ transform: rotate(45deg);
         }
         p {
       text-shadow: 0 0 2px #000000ab;
-      color: #3b3b3b;
+      color: #2e2e2e;
       font-size: 1.3rem;
       max-width: 300px;
       opacity: 0;
       transition: opacity 1s ease-in;
       margin: 0 0 20px 20px;
-      background-color: #ffffffb9;
+      background-color: #ffffff69;
       padding: 5px;
-      box-shadow: 0 0 5px 15px #ffffffb9;
+      box-shadow: 0 0 5px 15px #ffffff69;
       line-height: 1.35;
       border-radius: 5px;
       @include w1150 () {
@@ -1275,7 +1276,7 @@ transform: rotate(45deg);
         border-radius: 10px;
       }
       .colo {
-        color: #383d6e;
+        color: #181c48;
         font-size: 1.1rem;
         letter-spacing: .5px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
