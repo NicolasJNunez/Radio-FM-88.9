@@ -1731,8 +1731,8 @@ h4 {
   }
 }
 .fotos__item p {
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5215686275);
-  color: #2e2e2e;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8980392157);
+  color: #efefef;
   font-size: 1.3rem;
   max-width: 300px;
   font-weight: 600;
