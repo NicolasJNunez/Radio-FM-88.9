@@ -1411,7 +1411,6 @@ h4 {
   font-weight: 300;
   color: rgba(77, 77, 77, 0.8980392157);
   font-style: italic;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5294117647);
   letter-spacing: 2px;
   border-left: 2.3px solid;
   padding-left: 15px;
@@ -1453,7 +1452,6 @@ h4 {
   font-weight: 300;
   color: rgba(77, 77, 77, 0.8980392157);
   font-style: italic;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5294117647);
   letter-spacing: 3px;
   border-right: 2.3px solid;
   border-image: linear-gradient(to bottom, transparent 6%, rgba(0, 0, 0, 0.479) 6%, transparent);
@@ -1860,7 +1858,6 @@ h4 {
   font-weight: 300;
   color: rgba(77, 77, 77, 0.8980392157);
   font-style: italic;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5294117647);
   letter-spacing: 3px;
   transform: translateY(15px);
 }
@@ -2162,6 +2159,11 @@ h4 {
 @media (max-width: 990px) {
   .audioteca__texto article p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 606px) {
+  .audioteca__texto article p {
+    font-size: 1.2rem;
   }
 }
 .audioteca__sticker {
