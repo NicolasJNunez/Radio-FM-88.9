@@ -1808,15 +1808,19 @@ h4 {
 }
 .fotos__item-2 {
   background-image: url("../img/adri-felap.jpg");
+  order: 5;
 }
 .fotos__item-3 {
   background-image: url("../img/voz-adri.jpg");
+  order: 2;
 }
 .fotos__item-4 {
   background-image: url("../img/adri-mujer.jpg");
+  order: 1;
 }
 .fotos__item-5 {
   background-image: url("../img/adri-diploma.jpg");
+  order: 3;
 }
 @media (max-width: 860px) {
   .fotos__item-5 p {
