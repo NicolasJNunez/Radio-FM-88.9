@@ -618,7 +618,7 @@ h4 {
   flex-direction: column;
   border-left: 2.8px solid;
   padding-left: 12px;
-  border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.784) 5%, transparent);
+  border-image: linear-gradient(to bottom, transparent 5%, rgba(32, 32, 32, 0.784) 5%, transparent);
   border-image-slice: 1;
 }
 @media (max-width: 1566px) {
@@ -662,7 +662,7 @@ h4 {
 .portada__cont-frase-quote .portada__quote {
   margin: 80px 25px 0 0;
   align-self: end;
-  color: rgba(0, 0, 0, 0.7294117647);
+  color: rgba(46, 46, 46, 0.7294117647);
   font-size: 1.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1647058824);
@@ -717,7 +717,7 @@ h4 {
 .portada__frase {
   font-size: 2.1rem;
   font-weight: 300;
-  color: rgba(55, 55, 55, 0.8980392157);
+  color: rgba(85, 85, 85, 0.8980392157);
   font-style: italic;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.6274509804);
   letter-spacing: 3px;

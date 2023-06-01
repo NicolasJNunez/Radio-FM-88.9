@@ -288,7 +288,7 @@ transform: rotate(45deg);
     flex-direction: column;
     border-left: 2.8px solid;
     padding-left: 12px;
-    border-image: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.784) 5%, transparent);
+    border-image: linear-gradient(to bottom, transparent 5%, rgba(32, 32, 32, 0.784) 5%, transparent);
     border-image-slice: 1;
     @include w1566 () {
       transform: translateX(-220px);
@@ -317,7 +317,7 @@ transform: rotate(45deg);
     .portada__quote {
       margin: 80px 25px 0 0;
       align-self: end;
-      color: #000000ba;
+      color: #2e2e2eba;
       font-size: 1.5rem;
       
       font-weight: 700;
@@ -360,7 +360,7 @@ transform: rotate(45deg);
   &__frase {
     font-size: 2.1rem;
     font-weight: 300;
-    color: #373737e5;
+    color: #555555e5;
     font-style: italic;
     text-shadow: 0 0 1px #000000a0;
     letter-spacing: 3px;
